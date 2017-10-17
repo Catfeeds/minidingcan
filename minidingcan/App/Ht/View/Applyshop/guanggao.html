@@ -1,0 +1,45 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>后台管理</title>
+<link href="__PUBLIC__/ht/css/main.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="__PUBLIC__/ht/js/jquery.js"></script>
+<script type="text/javascript" src="__PUBLIC__/ht/js/action.js"></script>
+</head>
+<body>
+
+<div class="aaa_pts_show_1">【 入驻广告管理 】</div>
+
+<div class="aaa_pts_show_2">
+    
+    <div class="aaa_pts_3">
+         
+      <table class="pro_3">
+         <tr class="tr_1">
+           <td style="width:80px;">ID</td>
+           <td style="width:150px;">广告图</td>
+           <td style="">位置</td>
+           <td style="width:250px;">操作</td>
+         </tr>
+         <tbody id="news_option">
+          <volist name='adv_list' id="adv">
+           <tr>
+  		      <td>{$adv.id}</td>
+            <td><img src="__DATA__/{$adv.photo}" width="120px" height="60px"></td>
+            <td>{$adv.name}</td>
+            <td class="obj_1">
+  		        <a href="{:U('ggsave')}?adv_id={$adv.id}" >修改</a>
+  		      </td>
+  	       </tr>
+        </volist>
+         </tbody>
+      </table>      
+    </div>
+    
+</div>
+<script>
+
+</script>
+</body>
+</html>

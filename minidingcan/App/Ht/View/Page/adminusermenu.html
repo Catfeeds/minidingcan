@@ -1,0 +1,150 @@
+<div class="aaa_pts_left_1" onclick="left_open(this,'zh')">综合管理</div>
+<div class="aaa_pts_left_3" style="display:none;" id="zh">
+ <ul class="aaa_pts_left_2">
+   <li>
+       <a href="{:U('More/pweb_gl')}" target="iframe">前台管理</a>
+   </li>
+   <!-- <li>
+       <a href="{:U('More/index')}" target="iframe">APP首页设置</a>
+   </li> -->
+   <li>
+       <a href="{:U('More/setup')}" target="iframe">小程序配置</a>
+   </li>
+   <li>
+       <a href="{:U('More/fankui')}" target="iframe">用户反馈</a>
+   </li>
+ </ul>
+</div>
+
+<div class="aaa_pts_left_1" onclick="left_open(this,'user')">会员管理</div>
+<div class="aaa_pts_left_3" style="display:none;" id="user">
+   <ul class="aaa_pts_left_2">
+     <li><a href="{:U('User/index')}" target="iframe">会员管理</a></li>
+   </ul>
+</div>
+<?php if(intval($_SESSION['admininfo']['qx'])==4) { ?>
+<div class="aaa_pts_left_1" onclick="left_open(this,'adminuser')">管理员管理</div>
+<div class="aaa_pts_left_3" style="display:none;" id="adminuser">
+   <ul class="aaa_pts_left_2">
+     <li><a href="{:U('Adminuser/add')}" target="iframe">添加管理员</a></li>
+     <li><a href="{:U('Adminuser/adminuser')}" target="iframe">管理员管理</a></li>
+   </ul>
+</div>
+<?php } ?>
+
+<div class="aaa_pts_left_1" onclick="left_open(this,'shangchang')">店铺管理</div>
+<div class="aaa_pts_left_3" style="display:none;" id="shangchang">
+ <ul class="aaa_pts_left_2">
+   <li>
+       <a href="{:U('Shangchang/add')}" target="iframe">添加店铺</a>
+   </li>
+   <li>
+       <a href="{:U('Shangchang/index')}" target="iframe">店铺管理</a>
+   </li>
+ </ul>
+</div>
+
+<div class="aaa_pts_left_1" onclick="left_open(this,'applyshop')">实名认证管理</div>
+<div class="aaa_pts_left_3" style="display:none;" id="applyshop">
+ <ul class="aaa_pts_left_2">
+   <li>
+       <a href="{:U('Applyshop/index')}" target="iframe">待审核</a>
+   </li>
+   <li>
+       <a href="{:U('Applyshop/finishlog')}" target="iframe">已审核</a>
+   </li>
+   <li>
+       <a href="{:U('Applyshop/guanggao')}" target="iframe">保证金广告设置</a>
+   </li>
+   <li>
+       <a href="{:U('Applyshop/rzset')}" target="iframe">实名认证</a>
+   </li>
+ </ul>
+</div>
+
+<div class="aaa_pts_left_1" onclick="left_open(this,'product')">产品管理</div>
+<div class="aaa_pts_left_3" style="display:none;" id="product">
+ <ul class="aaa_pts_left_2">
+   <li>
+       <a href="{:U('Product/add')}" target="iframe">添加产品</a>
+   </li>
+   <li>
+       <a href="{:U('Product/index')}" target="iframe">产品管理</a>
+   </li>
+<!--    <li>
+       <a href="{:U('ProAttribute/add')}" target="iframe">添加产品属性</a>
+   </li>
+   <li>
+       <a href="{:U('ProAttribute/index')}" target="iframe">产品属性管理</a>
+   </li> -->
+ </ul>
+</div>
+
+<div class="aaa_pts_left_1" onclick="left_open(this,'panic')">抢购产品管理</div>
+<div class="aaa_pts_left_3" style="display:none;" id="panic">
+ <ul class="aaa_pts_left_2">
+   <li>
+       <a href="{:U('Panic/add')}" target="iframe">添加抢购产品</a>
+   </li>
+   <li>
+       <a href="{:U('Panic/index')}" target="iframe">抢购产品管理</a>
+   </li>
+ </ul>
+</div>
+
+<div class="aaa_pts_left_1" onclick="left_open(this,'brand')">品牌管理</div>
+<div class="aaa_pts_left_3" style="display:none;" id="brand">
+ <ul class="aaa_pts_left_2">
+   <li>
+       <a href="{:U('Brand/add')}" target="iframe">添加品牌</a>
+   </li>
+   <li>
+       <a href="{:U('Brand/index')}" target="iframe">品牌管理</a>
+   </li>
+ </ul>
+</div>
+
+<div class="aaa_pts_left_1" onclick="left_open(this,'order')">订单管理</div>
+<div class="aaa_pts_left_3" style="display:none;" id="order">
+ <ul class="aaa_pts_left_2">
+   <li>
+       <a href="{:U('Order/index')}" target="iframe">全部订单</a>
+   </li>
+ </ul>
+</div>
+
+<div class="aaa_pts_left_1" onclick="left_open(this,'nav')">分类管理</div>
+<div class="aaa_pts_left_3" style="display:none;" id="nav">
+ <ul class="aaa_pts_left_2">
+   <li>
+       <a href="{:U('Category/add')}" target="iframe">添加分类</a>
+   </li>
+   <li>
+       <a href="{:U('Category/index')}" target="iframe">分类管理</a>
+   </li>
+ </ul>
+</div>
+
+<div class="aaa_pts_left_1" onclick="left_open(this,'voucher')">优惠券管理</div>
+<div class="aaa_pts_left_3" style="display:none;" id="voucher">
+ <ul class="aaa_pts_left_2">
+    <li>
+       <a href="{:U('Voucher/add')}" target="iframe">添加优惠券</a>
+   </li>
+   <li>
+       <a href="{:U('Voucher/index')}" target="iframe">优惠券管理</a>
+   </li>
+ </ul>
+</div>
+
+<div class="aaa_pts_left_1" onclick="left_open(this,'advertisement')">广告管理</div>
+<div class="aaa_pts_left_3" style="display:none;" id="advertisement">
+ <ul class="aaa_pts_left_2">
+   <li>
+      <a href="{:U('Guanggao/index')}" target="iframe">广告管理</a>
+   </li>
+   <li>
+    <a href="{:U('Guanggao/add')}" target="iframe">添加广告</a>
+   </li>
+ </ul>
+</div>

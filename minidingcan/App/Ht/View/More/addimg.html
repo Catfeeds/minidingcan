@@ -1,0 +1,75 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>后台管理</title>
+<link href="__PUBLIC__/ht/css/main.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="__PUBLIC__/ht/js/jquery-1.8.3.min.js"></script>
+</head>
+<body>
+
+<div class="aaa_pts_show_1">【 首页图标管理 】</div>
+
+<div class="aaa_pts_show_2">
+
+    <div class="aaa_pts_3">
+      <form action="{:U('saveimg')}" method="post" onsubmit="return ac_from();" enctype="multipart/form-data">
+      <ul class="aaa_pts_5">
+        <?php if ($info['link']=='list') { ?>
+         <li>
+            <div class="d1">产品分类:</div>
+            <div>
+              <select class="inp_1" name="ptype" id="ptype" onchange="getcatname();">
+              <!-- 遍历 -->
+      				<volist name="procat" id="v">
+      					<option value="{$v.id}" data-name="{$v.name}" <if condition="$v.id eq $info['ptype']">selected="selected"</if>>{$v.name}</option>
+                <volist name="v['list']" id="vs">
+                  <option value="{$vs.id}" data-name="{$vs.name}" <if condition="$vs.id eq $info['ptype']">selected="selected"</if>>&nbsp;&nbsp;-- {$vs.name}</option>
+                </volist>
+      				</volist>
+      			  <!-- 遍历 -->
+              </select><?php if(count($procat)<=0) { ?><span style="font-size:14px;color:gray;">&nbsp;&nbsp;*&nbsp;请先添加产品分类</span><?php } ?>
+            </div>
+         </li>
+         <?php } ?>
+         <li>
+            <div class="d1">显示名称:</div>
+            <div>
+              <input class="inp_1" name="name" id="name" value="{$info.name}"/>
+            </div>
+         </li>
+         <li><div style="color:#c00; font-size:14px; padding-left:20px;">图片尺寸 190px*105px</div></li>
+         <li data-index="0">
+            <div class="d1">图片:</div>
+            <div>
+              <?php if ($info['photo']) { ?>
+                <img src="__DATA__/<?php echo $info['photo']; ?>" width="95" height="50" /><br /><br />
+              <?php } ?>
+              <input type="file" name="file" id="photo" />
+            </div>
+         </li>
+         <li>
+            <div class="d1">排  序:</div>
+            <div>
+              <input class="inp_1" name="sort" id="sort" value="{$info.sort}"/>
+            </div><span style="font-size:14px;color:gray;"></span>
+         </li>
+         <li>
+          <input type="submit" name="submit" value="提交" class="aaa_pts_web_3" border="0">
+          <input type="hidden" name="id" value="{$info.id}">
+         </li>
+      </ul>
+      </form>
+         
+    </div>
+    
+</div>
+<script>
+function getcatname () {
+  var names = $("#ptype").find("option:selected").attr("data-name");
+  $("#name").val(names);
+}
+</script>
+</body>
+</html>

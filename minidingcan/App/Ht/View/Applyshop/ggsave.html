@@ -1,0 +1,57 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>后台管理</title>
+<link href="__PUBLIC__/ht/css/main.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="__PUBLIC__/ht/js/jquery.js"></script>
+<script type="text/javascript" src="__PUBLIC__/ht/js/action.js"></script>
+<script type="text/javascript" src="__PUBLIC__/plugins/xheditor/xheditor-1.2.1.min.js"></script>
+<script type="text/javascript" src="__PUBLIC__/plugins/xheditor/xheditor_lang/zh-cn.js"></script>
+</head>
+<body>
+
+<div class="aaa_pts_show_1">【 入驻广告管理 】<a href="javascript:history.go(-1)" data-original-title="返回">返回</a></div>
+
+<div class="aaa_pts_show_2">
+    <div class="aaa_pts_3">
+      <form action="{:U('ggsave')}" method="post" onsubmit="return ac_from();" enctype="multipart/form-data">
+      <ul class="aaa_pts_5">
+         <li>
+            <div class="d1">广告位置:</div>
+            <div>
+              <input class="inp_1" name="name" id="name" value="<?php echo $adv_info['name']; ?>"/>
+            </div>
+         </li>
+        <span style="color:red;font-size: 12px;margin-left:1%;">所有轮播图大小：480*200；</span>
+         <li data-index="" style="margin-top:10px;">
+
+            <div class="d1">广告图片:</div>
+            <div>
+             <input type="hidden" name="photo" id="photo" value="<?php echo $adv_info['photo']; ?>"/>
+              <?php if ($adv_info['photo']) { ?>
+              <img src="__DATA__/<?php echo $adv_info['photo']; ?>" width="200" height="100" /><br /><br />
+              <?php } ?>
+              <input type="file" name="file" id="file" value="">
+            </div>
+         </li>
+         <li><input type="submit" name="submit" value="提交" class="aaa_pts_web_3" border="0" >
+            <input type="hidden" name="adv_id" id="adv_id" value="<?php echo $adv_info['id']; ?>">
+         </li>
+      </ul>
+      </form>
+         
+    </div>
+    
+</div>
+<script>
+function ac_from(){
+  var name=document.getElementById('name').value;
+  if(name.length<2){
+	  alert('广告标题长度不能少于2');
+	  return false;
+	  } 
+}
+</script>
+</body>
+</html>

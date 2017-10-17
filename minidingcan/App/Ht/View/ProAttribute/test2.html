@@ -1,0 +1,104 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>后台管理</title>
+<link href="__PUBLIC__/ht/css/main.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="__PUBLIC__/ht/js/jquery.js"></script>
+<script type="text/javascript" src="__PUBLIC__/ht/js/action.js"></script>
+<script type="text/javascript" src="__PUBLIC__/plugins/xheditor/xheditor-1.2.1.min.js"></script>
+<script type="text/javascript" src="__PUBLIC__/plugins/xheditor/xheditor_lang/zh-cn.js"></script>
+<script type="text/javascript" src="__PUBLIC__/ht/js/jCalendar.js"></script>
+<style>
+.dx1{float:left; margin-left: 17px; margin-bottom:10px; }
+.dx2{color:#090; font-size:16px;  border-bottom:1px solid #CCC; width:100% !important; padding-bottom:8px;}
+.dx3{width:120px; margin:5px auto; border-radius: 2px; border: 1px solid #b9c9d6; display:block;}
+.dx4{border-bottom:1px solid #eee; padding-top:5px; width:100%;}
+</style>
+
+</head>
+<body>
+
+<div class="aaa_pts_show_1">【 产品属性管理 】</div>
+
+<div class="aaa_pts_show_2">
+    <div class="aaa_pts_3">
+		<form action="{:U('test2')}" method="post" onsubmit="return ac_from();">
+		<ul class="aaa_pts_5">
+         <!-- 产品规格属性添加-->
+      <?php foreach ($string['color'] as $k => $v) { ?>
+        <li class="pro_2_2" id="attrs"><div style="clear:both;margin-top:5px;"><?php echo $v; ?></div>
+          <?php foreach ($string['size'] as $key => $val) { ?>
+            <div style="clear:both;margin-top:5px;">---<?php echo $val; ?></div>
+            <?php foreach ($string['type'] as $keys => $vals) { ?>
+            <div style="clear:both;margin-top:5px;">------<?php echo $vals; ?></div>
+          <?php } ?>
+          <?php } ?>
+        </li>
+      <?php } ?>
+      <li><input type="submit" name="submit" value="提交" class="aaa_pts_web_3" border="0" id="aaa_pts_web_s"></li>
+    </ul>
+      </form>
+         
+    </div>
+    
+</div>
+<script>
+function chk_info(chk_id,chk_name){
+	var checkbox = $("input[name='attribute[]']:checked").length;
+    if (checkbox>4) {
+    	alert('最多只能选四个产品属性.');
+    	document.getElementById(chk_id).checked=false;
+    	return false;
+    };
+   
+	if (document.getElementById(chk_id).checked) {
+		var info = '<br /><div style="clear:both;margin-top:5px;" id=div_'+chk_id+'><p>'+chk_name+'：<input class="inp_1 inp_6 " name="guige_name'+chk_id+'[]" value=""/> &nbsp;&nbsp;&nbsp;<input style="margin:5px;width:50px" type="button" onclick="$(this).parent().parent().remove()" style="cursor:pointer" value="删除"><input style="margin:5px;width:80px;" type="button" value="添加'+chk_name+'" style="margin-left:15px;" onclick="guige_append('+chk_id+')"></p></div>';
+		$('#guige').append(info);
+	}else{
+		document.getElementById("div_"+chk_id).remove();
+	}
+}
+
+function guige_append(chk_id){
+	var info = '<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input class="inp_1 inp_6 " name="guige_name'+chk_id+'[]" value=""/> &nbsp;&nbsp;&nbsp; <input style="margin:5px;width:50px" type="button" onclick="$(this).parent().remove()" style="cursor:pointer" value="删除"></p>';
+	$("#div_"+chk_id).append(info);
+}
+
+function product_type(type){
+   if(type=='activity'){
+	   $('.activity').show();
+	   $('.product').hide();
+   }else{
+	   $('.activity').hide();
+	   $('.product').show();
+  }
+}
+
+product_type('<?php echo $pro_allinfo['type']=='activity' ? 'activity' : 'product' ?>');
+
+function ac_from(){
+  
+}
+
+//初始化编辑器
+$('#content').xheditor({
+	skin:'nostyle',
+	upImgUrl:'../../../inc/upload.php'
+});
+
+$(document).ready(function() {
+	$("#aaa_pts_web_s").click(function(){
+		 var im = $("#photo_string").val();
+		 if(im.length<=0){
+			 alert("请添加详情图");
+			 return false;
+		 }
+	})
+})
+
+
+</script>
+</body>
+</html>

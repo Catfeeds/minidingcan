@@ -1,0 +1,107 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>后台管理</title>
+<link href="__PUBLIC__/ht/css/main.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="__PUBLIC__/ht/js/jquery.js"></script>
+<script type="text/javascript" src="__PUBLIC__/ht/js/action.js"></script>
+<script type="text/javascript" src="__PUBLIC__/ht/js/jquery1.8.js"></script>
+<script type="text/javascript" src="__PUBLIC__/ht/js/layer/layer.js"></script>
+<style type="text/css">
+	#tanchu { display:none; }
+	#tanchu textarea{ width: 99%; height: 280px; margin-top:2px; margin-left:2px; border:1px solid #D3D3D3 }
+	#save_reply{ float:right; margin-right:3px; margin-top:2px; padding:2px 10px; }
+</style>
+</head>
+<body>
+
+<div class="aaa_pts_show_1">【 评论管理 】</div>
+
+<div class="aaa_pts_show_2">
+    
+    <div>
+      <div class="aaa_pts_4"><a href="{:U('index')}">全部新闻</a></div>
+      <div class="aaa_pts_4"><a href="#">新闻评论</a></div>
+    </div>
+    <div class="aaa_pts_3">
+       <div id="tanchu" >
+			<form action="" method="post" name="reply-form" >
+				<textarea name="content" id="content"></textarea>			
+				<input type="hidden" name="reply_id" id="reply_id" value="">
+				<input type="button" name="answer" id="save_reply" value="发送">
+			</form>
+	  </div>
+      <table class="pro_3">
+         <tr class="tr_1">
+           <td style="width:40px;">ID</td>
+           <td style="width:90px;">头像</td>
+           <td style="width:90px;">评论人</td>
+           <td style="width:30%">评论内容</td>
+           <td style="width:150px;">评论时间</td>
+           <td style="width:30%">回复内容</td>
+           <td style="width:150px;">回复时间</td>
+           <td style="width:150px;">操作</td>
+         </tr>
+         <volist name='dp_list' id='dp'>
+         <tr>
+		   <td>{$dp.id}</td>
+           <td><img src="__DATA__/{$dp.u_photo}" style="width:60px; height:60px; margin:5px; border:1px solid #eee;"/></td>
+           <td>{$dp.u_name}</td>
+           <td>{$dp.concent}</td>
+           <td>{$dp.addtime|date='Y-m-d H:i:s',###}</td>
+           <td>{$dp.reply_content}</td>
+           <td>{$dp.reply_time|date='Y-m-d H:i:s',###}</td>
+           <td>
+			  <a class="reply" data-id="{$dp.id}">回复</a> | 
+			  <a onclick="del_id_url2({$dp.id})">删除
+		   </td>
+	   	 </tr>
+		 </volist>
+         <tr>
+            <td colspan="10" class="td_2">
+                 {$page}  
+             </td>
+         </tr>
+      </table>      
+    </div>
+    
+</div>
+<script>
+function del_id_url2(id){
+   if(confirm("确认删除吗？"))
+   {
+	  location='{:U("del")}?type=reply&rid='+id;
+   }
+}
+
+$('.reply').on('click', function(){  //使用layer弹出层插件
+    //alert($(this).attr("data-id"));
+	$("#reply_id").val($(this).attr("data-id"));	
+    layer.open({
+        type: 1,
+		title: "回复内容",
+        area: ['500px', '350px'],
+        shadeClose: true, //点击遮罩关闭
+        content: $("#tanchu"),
+		end :function(index){
+			var timer=setInterval('myrefresh()',3000); //弹窗结束后，仍指定3秒刷新一次  
+		}
+    });
+});
+
+//ajax提交
+$("#save_reply").click(function(){
+	//alert($("#reply_id").val());
+	$.post("{:U('reply')}",{reply_id:$("#reply_id").val(),reply_content:$("#content").val()},function(data){
+		if(data.status==1){
+			alert(data.info);
+			location.reload();
+		}else{
+			alert(data.info);
+		}
+	},"json");
+});
+</script>
+</body>
+</html>

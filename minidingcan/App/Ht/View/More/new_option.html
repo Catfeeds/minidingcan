@@ -1,0 +1,65 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>后台管理</title>
+<link href="__PUBLIC__/ht/css/main.css" rel="stylesheet" type="text/css" />
+
+</head>
+<body>
+
+<div class="aaa_pts_show_1">【 栏目管理 】</div>
+
+<div class="aaa_pts_show_2">
+
+    <div class="aaa_pts_3">
+      <form action="?id=<?php echo $id; ?>&option={$more}" method="post" onsubmit="return ac_from();">
+      <ul class="aaa_pts_5">
+         <if condition="$more eq NULL">
+         <li>
+            <div class="d1">栏目名:</div>
+            <div>
+              <select class="inp_1" name="pid" id="pid">
+              <!-- 遍历 -->
+      				<volist name="newscat" id="v" empty="没有数据">
+      					<option {$v.id}>{$v.name}</option>	
+      				</volist>
+      			  <!-- 遍历 -->
+              </select>
+            </div>
+         </li>
+         <else/>
+         <li><div style="color:#c00; font-size:14px; padding-left:20px;">更多设置</div></li>
+         </if>
+         <li><div style="color:#c00; font-size:14px; padding-left:20px;">图片尺寸 55px*55px透明底图</div></li>
+         <li data-index="0">
+            <div class="d1">图片:</div>
+            <div>
+              <input class="inp_1" name="key" id="key" value="{$config.key}"/>
+              <iframe class="pro_2" src="{:U('Upload/photo_add')}?id=key&width=55&height=55" frameborder="0"></iframe>
+            </div>
+         </li>
+         <li>
+            <div class="d1">背景颜色:</div>
+            <div>
+              <input class="inp_1" name="val" id="val" value="{$config.val}"/> &nbsp;&nbsp;&nbsp;16进制的背景颜色
+            </div>
+         </li>
+         <if condition="$more eq NULL">
+         <li>
+            <div class="d1">排 序:</div>
+            <div>
+              <input class="inp_1" name="sort" id="sort" value="{$config.sort}"/>
+            </div>
+         </li>
+         </if>
+         <li><input type="submit" name="submit" value="提交" class="aaa_pts_web_3" border="0"></li>
+      </ul>
+      </form>
+         
+    </div>
+    
+</div>
+</body>
+</html>

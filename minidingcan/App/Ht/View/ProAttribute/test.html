@@ -1,0 +1,111 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>后台管理</title>
+<link href="__PUBLIC__/ht/css/main.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="__PUBLIC__/ht/js/jquery.js"></script>
+<script type="text/javascript" src="__PUBLIC__/ht/js/action.js"></script>
+<script type="text/javascript" src="__PUBLIC__/plugins/xheditor/xheditor-1.2.1.min.js"></script>
+<script type="text/javascript" src="__PUBLIC__/plugins/xheditor/xheditor_lang/zh-cn.js"></script>
+<script type="text/javascript" src="__PUBLIC__/ht/js/jCalendar.js"></script>
+
+<style>
+<?php 
+$width=round($img['width']*0.6+6);
+$height =round( $width*$img['height'] / $img['width']);
+echo '
+	.pro_2_logo{width:'.$logo['width'].'px; height:'.$logo['height'].'px;}
+	.pro_2_pic{width:'.$pic['width'].'px; height:'.$pic['height'].'px;}
+    .pro_2_1{width:'.$width.'px; height:'.$height.'px;} 
+'; 
+?>
+.dx1{float:left; margin-left: 17px; margin-bottom:10px; }
+.dx2{color:#090; font-size:16px;  border-bottom:1px solid #CCC; width:100% !important; padding-bottom:8px;}
+.dx3{width:120px; margin:5px auto; border-radius: 2px; border: 1px solid #b9c9d6; display:block;}
+.dx4{border-bottom:1px solid #eee; padding-top:5px; width:100%;}
+</style>
+
+</head>
+<body>
+
+<div class="aaa_pts_show_1">【 产品管理 】</div>
+
+<div class="aaa_pts_show_2">
+    <div>
+       <div class="aaa_pts_4"><a href="{:U('Product/index')}">全部产品</a></div>
+       <div class="aaa_pts_4"><a href="{:U('Product/add')}">添加产品</a></div>
+    </div>
+    <div class="aaa_pts_3">
+		<form action="{:U('test')}" method="post" onsubmit="return ac_from();">
+		<ul class="aaa_pts_5">
+         <!-- 产品规格属性添加-->
+         <li class="product"><div class="d1 dx2">产品属性</div></li>
+        <li class="pro_2_2" id="attrs">
+        	<div style="clear:both;margin-top:5px;">
+          <div id="attrs2">  
+        	属性名：
+        	<volist name="attr_list" id="list">
+        		&nbsp;&nbsp;&nbsp; <input type="checkbox" name="attribute[]" id="{$list.id}" value="{$list.id}" onchange="chk_info({$list.id},'{$list.attr_name}');" />&nbsp;{$list.attr_name}
+        	</volist>
+        </div>
+        	<br /><br /><input style="width:58px;margin-left:70px" type="button" name="add_attr" value="添 加" border="0" id="add_attr" onclick="attr_append()">
+        </div>
+		</li>
+		<!-- 产品规格属性添加 -->
+		<li class="product"><div class="d1 dx2">产品规格</div></li>
+        <li class="pro_2_2" id="guige">
+        	<!-- <div style="clear:both;margin-top:5px;">
+        		规格名：<input class="inp_1 inp_6 " name="guige_name[]" value=""/> &nbsp;&nbsp;&nbsp; 
+        		价格：<input class="inp_1 inp_6" name="guige_price[]" value=""/> <input style="margin:5px;width:50px" type="button" onclick="$(this).parent().remove()" style="cursor:pointer" value="删除">
+        	</div> -->
+		</li>
+        <li>
+			<!-- <input type="button" value="添加规格" class="aaa_pts_web_3" style="margin-left:55px;" onclick="guige_append()"> -->
+        </li>
+         <li><input type="submit" name="submit" value="提交" class="aaa_pts_web_3" border="0" id="aaa_pts_web_s"></li>
+      </ul>
+      </form>
+         
+    </div>
+    
+</div>
+<script type="text/javascript" src="__PUBLIC__/ht/js/product.js"></script>
+<script>
+function addAttrs(obj){
+  var attrs_name = $('input[name=attrs_name]').val();
+  if (!attrs_name) {
+    alert('请输入属性名称.');
+    return false;
+  };
+  $.post('{:U("ajax_save")}',{attrs_name:attrs_name},function(data){
+    if(data.status==1){
+      $(obj).parent().remove();
+      $('#attrs2').append('&nbsp;&nbsp;&nbsp; <input type="checkbox" name="attribute[]" id="'+data.attr_id+'" value="'+data.attr_id+'" onchange="chk_info('+data.attr_id+',\''+attrs_name+'\');" />&nbsp;'+attrs_name);
+      document.getElementById('add_attr').style.display='block';
+    }else{
+      alert(data.info);
+    }
+  },"json");
+}
+//初始化编辑器
+$('#content').xheditor({
+	skin:'nostyle',
+	upImgUrl:'../../../inc/upload.php'
+});
+
+$(document).ready(function() {
+	$("#aaa_pts_web_s").click(function(){
+		 var im = $("#photo_string").val();
+		 if(im.length<=0){
+			 alert("请添加详情图");
+			 return false;
+		 }
+	})
+})
+
+
+</script>
+</body>
+</html>

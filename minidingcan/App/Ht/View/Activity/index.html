@@ -1,0 +1,78 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>后台管理</title>
+<link href="__PUBLIC__/ht/css/main.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="__PUBLIC__/ht/js/jquery.js"></script>
+<script type="text/javascript" src="__PUBLIC__/ht/js/action.js"></script>
+</head>
+<body>
+
+<div class="aaa_pts_show_1">【 活动管理 】</div>
+
+<div class="aaa_pts_show_2">
+    <div>
+       <div class="aaa_pts_4"><a href="{:U('index')}">全部活动</a></div>
+       <div class="aaa_pts_4"><a href="{:U('add')}">添加活动</a></div>
+    </div>
+    <div class="aaa_pts_3">
+      <form name='form' action="{:U('index')}" method='get'>
+      <div class="pro_4 bord_1">
+         <div class="pro_5">标题：<input type="text" class="inp_1 inp_6" name='news_name' id="name" value="<?php echo $name;?>"></div>
+         <!-- <div class="pro_5">
+               新闻类别：
+               <select class="inp_1 inp_6" name="pid" id="pid">
+			           <option value="">全部类别</option>
+                 <volist name='cate_list' id='cate'>
+                 <if condition="$cate.id eq $cid">
+                 <option value="{$cate.id}" selected="selected" >- {$cate.name}</option>
+                 <else />
+                 <option value="{$cate.id}" >- {$cate.name}</option>
+                 </if>
+				         </volist>
+               </select>
+         </div> -->
+         <div class="pro_6"><input type="button" class="aaa_pts_web_3" value="搜 索" style="margin:0;" onclick="product_option();"></div>
+      </div>
+      </form>
+      <table class="pro_3">
+         <tr class="tr_1">
+           <td style="width:80px;">ID</td>
+           <td>活动标题</td>
+           <td>添加时间</td>
+           <td style="width:180px;">操作</td>
+         </tr>
+          <volist name='list' id='vo'>
+          <tr>
+            <td>{$vo.id}</td>
+            <td>{$vo.name}</td>
+            <td>{$vo.addtime}</td>
+            <td><a href="{:U('add')}?news_id={$vo.id}">修改</a> | 
+              <!-- <a href="{:U('review')}?news_id={$vo.id}">查看评论</a> |  -->
+              <a onclick="del_id_url2({$vo.id})">删除</td>
+          </tr>  
+          </volist>  
+         <tr>
+            <td colspan="10" class="td_2">
+                {$page}
+             </td>
+         </tr>
+      </table>      
+    </div>
+    
+</div>
+<script>
+function product_option(){
+      $('form').submit();
+}
+
+function del_id_url2(id){
+   if(confirm("确认删除吗？"))
+   {
+	  location='{:U("del")}?did='+id;
+   }
+}
+</script>
+</body>
+</html>

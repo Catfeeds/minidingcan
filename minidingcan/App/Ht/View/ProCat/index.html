@@ -1,0 +1,50 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>后台管理</title>
+<link href="__PUBLIC__/ht/css/main.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="__PUBLIC__/ht/js/jquery.js"></script>
+<script type="text/javascript" src="__PUBLIC__/ht/js/action.js"></script>
+</head>
+<body>
+
+<div class="aaa_pts_show_1">【 分类管理 】</div>
+
+<div class="aaa_pts_show_2">
+    <div class="aaa_pts_3"><span style="color:red">备注：产品分类建议4个字以内，否则在小程序端不能显示完整</span>
+      <table class="pro_3">
+         <tr class="tr_1">
+           <td style="width:80px;">分类ID</td>
+           <td>分类名称</td>
+           <td style="width:120px;">排序</td>
+           <!-- <td style="width:150px;">属性</td> -->
+           <td style="width:200px;">操作选项</td>
+         </tr>
+         <volist name='list' id='tr1'>
+          <tr>
+			 <td>{$tr1.id}</td>
+			 <td>{$tr1.name}</td>
+			 <td>{$tr1.sort}</td>
+			 <!-- <td><if condition="$tr1.type eq 1"><font style="color:#090">推荐</font></if></td> -->
+			 <td>
+			  <!-- <a href="{:U('set_tj')}?tj_id={$tr1.id}">推荐</a> |  -->
+			  <a href="{:U('add')}?cid={$tr1.id}">修改</a> | 
+				<a onclick="del_id_url2({$tr1.id})">删除</a>
+			 </td>
+		  </tr>
+         </volist>
+     </table>
+    </div>
+    
+</div>
+<script>
+function del_id_url2(id){
+   if(confirm("确认删除吗？"))
+   {
+	  location='{:U("del")}?did='+id;
+   }
+}
+</script>
+</body>
+</html>

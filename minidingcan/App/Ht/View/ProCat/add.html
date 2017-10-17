@@ -1,0 +1,131 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>后台管理</title>
+<link href="__PUBLIC__/ht/css/main.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="__PUBLIC__/ht/js/jquery.js"></script>
+<script type="text/javascript" src="__PUBLIC__/ht/plugins/xheditor/xheditor-1.2.1.min.js"></script>
+<script type="text/javascript" src="__PUBLIC__/ht/plugins/xheditor/xheditor_lang/zh-cn.js"></script>
+</head>
+<body>
+<div class="aaa_pts_show_1">【 分类管理 】</div>
+<div class="aaa_pts_show_2">   
+    <div class="aaa_pts_3">
+      <form action="{:U('save')}" method="post" onsubmit="return ac_from();" enctype="multipart/form-data">
+      <ul class="aaa_pts_5">
+         <!-- <li>
+            <div class="d1">所属分类:</div>
+            <div id="append">
+              <select class="inp_1" name="tid" id="tid">
+                <option value="0">一级栏目</option>
+                <volist name='list' id="op1">
+                  <if condition="$op1.id eq $cate_info['tid']">
+                    <option value="{$op1.id}" id="cate_{$op1.id}" name="one" selected="selected">- {$op1.name}</option>
+                  <else />
+                    <option value="{$op1.id}" id="cate_{$op1.id}" name="one">- {$op1.name}</option>
+                  </if>
+                  <volist name="op1['list2']" id="op2">
+                    <if condition="$op2.id eq $cate_info['tid']">
+                      <option value="{$op2.id}" id="cate_{$op2.id}" name="two" selected="selected">&nbsp; &nbsp;- {$op2.name}</option>
+                    <else />
+                      <option value="{$op2.id}" id="cate_{$op2.id}" name="two">&nbsp; &nbsp;- {$op2.name}</option>
+                    </if>
+                    <volist name="op2['list3']" id="op3">
+                      <option value="{$op3.id}" id="cate_{$op3.id}" name="three">&nbsp; &nbsp;&nbsp; &nbsp;- {$op3.name}</option>
+                    </volist>
+                  </volist>
+                </volist>
+				      </select> 
+            </div>
+         </li> -->
+         <li>
+            <div class="d1">栏目名:</div>
+            <div>
+              <input class="inp_1" name="name" id="name" value="<?php echo $cate_info['name']; ?>"/>
+              <input type="hidden" name="err" id="err" value="0"/>
+            </div>
+         </li>
+		 <?php if($action=='tuijian' || 2>1){ ?>
+		 <!-- <li>
+			<div style="color:#c00; font-size:14px; padding-left:20px;">上传推荐缩略图为 ：200*120</div>
+     </li>
+		 <li data-index="0">
+            <div class="d1">推荐略缩图:</div>
+            <div>
+              <input class="inp_1" name="bz_5" id="photo_sj1" value="<?php //echo $v['bz_5']; ?>">
+              <iframe class="pro_2" src="../../../inc/photo_add.php?id=photo_sj1&width=200&height=120" frameborder="0"></iframe>
+            </div>
+      </li> -->
+		 <?php } ?>
+		 <li>
+            <div style="color:#c00; font-size:14px; padding-left:20px;"> 产品分类上传缩略图为 ：100*100；<!-- 其它缩略图为200*120; --></div>
+         </li>
+         <li data-index="0">
+            <div class="d1">略缩图:</div>
+            <div>
+              <input type='hidden' name="bz_1" id="photo_sj0" value="<?php echo $cate_info['bz_1']; ?>">
+            <!-- <iframe class="pro_2" src="__DATA__/inc/photo_add.php?id=photo_sj0&width=200&height=200" frameborder="0"></iframe> -->
+              <?php if ($cate_info['bz_1']) { ?>
+                <img src="__DATA__/<?php echo $cate_info['bz_1']; ?>" width="200" height="200" />
+              <?php } ?>
+              <input type="file" name="file2" id="bz_1" />
+            </div>
+         </li>
+         <!-- <li>
+            <div class="d1">栏目介绍:</div>
+            <div>
+              <textarea class="inp_1 inp_8" name="content" id="content"/><?php echo $cate_info['concent']; ?></textarea>
+            </div>
+         </li> -->
+         <li>
+            <div class="d1">排 序:</div>
+            <div>
+              <input class="inp_1" name="sort" id="sort" value="<?php echo $cate_info['sort']; ?>"/>
+            </div>
+         </li>
+         <li><input type="submit" name="submit" value="提交" class="aaa_pts_web_3" border="0">
+         <input type="hidden" name="cid" id="cid" value="<?php echo $cate_info['id']; ?>">
+         </li>
+      </ul>
+      </form>
+         
+    </div>
+    
+</div>
+<script>
+function ac_from(){
+  //判断栏目名称
+  var name=document.getElementById('name').value;
+  if(name.length<1){
+	  alert('栏目名不能为空.');
+	  return false;
+	  }
+
+  return true;
+}
+
+//下拉框的onchange事件，提示限制无限极分类错误信息
+$('#tid').change(function(){
+  //获取选中分类的id
+  var tid = $(this).val();
+  $('#err').val(0);
+  var op_name = document.getElementById("cate_"+tid).getAttribute("name");
+  document.getElementById("name").disabled=false;
+  $('#font').remove();
+  if (op_name==='three') {
+    var info = '<font id="font" style="color:red">&nbsp;&nbsp;* 该栏目已经是第三级分类，不可添加下级分类</font>';
+    $("#append").append(info);
+    document.getElementById("name").disabled=true;
+    $('#err').val(1);
+  };
+  
+});
+
+//初始化编辑器
+$('#concent').xheditor({
+	skin:'nostyle'
+});
+</script>
+</body>
+</html>

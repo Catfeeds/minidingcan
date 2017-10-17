@@ -1,0 +1,1 @@
+a:9:{i:0;s:2:"id";i:1;s:3:"pid";i:2;s:5:"uname";i:3;s:5:"ename";i:4;s:4:"sort";i:5;s:7:"concent";i:6;s:7:"addtime";s:3:"_pk";s:2:"id";s:5:"_type";a:7:{s:2:"id";s:7:"int(11)";s:3:"pid";s:7:"int(11)";s:5:"uname";s:12:"varchar(255)";s:5:"ename";s:12:"varchar(255)";s:4:"sort";s:7:"int(11)";s:7:"concent";s:10:"mediumtext";s:7:"addtime";s:7:"int(11)";}}

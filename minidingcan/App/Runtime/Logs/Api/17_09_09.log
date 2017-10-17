@@ -1,0 +1,20 @@
+[ 2017-09-09T14:14:55+08:00 ] 127.0.0.1 /minidingcanapi/index.php/Api/Index/index
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' D:\phpStudy\WWW\minidingcanapi\App\Common\Conf\debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000129s ]
+NOTIC: [8] Undefined variable: sckey D:\phpStudy\WWW\minidingcanapi\App\Api\Conf\config.php 第 33 行.
+NOTIC: [8] Undefined variable: sckey D:\phpStudy\WWW\minidingcanapi\App\Api\Conf\config.php 第 33 行.
+NOTIC: [8] Undefined variable: sckey D:\phpStudy\WWW\minidingcanapi\App\Api\Conf\config.php 第 33 行.
+NOTIC: [8] Use of undefined constant LOAD_EXT_CONFIG - assumed 'LOAD_EXT_CONFIG' D:\phpStudy\WWW\minidingcanapi\App\Api\Conf\config.php 第 40 行.
+
+[ 2017-09-09T16:01:05+08:00 ] 127.0.0.1 /minidingcanapi/index.php/Api/Index/index
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' D:\phpStudy\WWW\minidingcanapi\App\Common\Conf\debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000102s ]
+NOTIC: [8] Undefined variable: sckey D:\phpStudy\WWW\minidingcanapi\App\Api\Conf\config.php 第 33 行.
+NOTIC: [8] Undefined variable: sckey D:\phpStudy\WWW\minidingcanapi\App\Api\Conf\config.php 第 33 行.
+NOTIC: [8] Undefined variable: sckey D:\phpStudy\WWW\minidingcanapi\App\Api\Conf\config.php 第 33 行.
+NOTIC: [8] Use of undefined constant LOAD_EXT_CONFIG - assumed 'LOAD_EXT_CONFIG' D:\phpStudy\WWW\minidingcanapi\App\Api\Conf\config.php 第 40 行.
+

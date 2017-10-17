@@ -1,0 +1,178 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>后台管理</title>
+<link href="__PUBLIC__/ht/css/main.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="__PUBLIC__/ht/js/jquery.js"></script>
+<script type="text/javascript" src="__PUBLIC__/ht/js/action.js"></script>
+<script type="text/javascript" src="__PUBLIC__/plugins/xheditor/xheditor-1.2.1.min.js"></script>
+<script type="text/javascript" src="__PUBLIC__/plugins/xheditor/xheditor_lang/zh-cn.js"></script>
+</head>
+<style type="text/css">
+  .aaa_pts_5 li .d1 {
+    width: 138px;
+  }
+</style>
+<body>
+
+<div class="aaa_pts_show_1">【 入驻广告管理 】<a href="javascript:history.go(-1)" data-original-title="返回">返回</a></div>
+
+<div class="aaa_pts_show_2">
+    <div class="aaa_pts_3">
+      <form>
+      <ul class="aaa_pts_5">
+         <li>
+            <div class="d1">申请人:</div>
+            <div>
+              <input class="inp_1" name="name" id="name" value="{$info.user}" readonly="" />
+            </div>
+         </li>
+      
+         <li>
+            <div class="d1">类型:</div>
+            <div>
+              <input class="inp_1" name="name" id="name" value="<?php echo $b['rztype']=='geren'?'个人实名认证':'企业实名认证'?>" readonly="" />
+            </div>
+         </li>
+         <!-- 企业 -->
+         <if condition="$info.rztype eq 'qiye'">
+         <li>
+            <div class="d1">企业名称:</div>
+            <div>
+              <input class="inp_1" name="qiyename" id="qiyename" value="{$info.qiyename}" readonly="" />
+            </div>
+         </li>
+         <li>
+            <div class="d1">企业法人:</div>
+            <div>
+              <input class="inp_1" name="qiyefrname" id="qiyefrname" value="{$info.qiyefrname}" readonly="" />
+            </div>
+         </li>
+         <li>
+            <div class="d1">法人身份证:</div>
+            <div>
+              <input class="inp_1" name="qiyefr_idc" id="qiyefr_idc" value="{$info.qiyefr_idc}" readonly="" />
+            </div>
+         </li>
+         <li>
+            <div class="d1">营业执照:</div>
+            <div>
+              <a href="__DATA__/{$info.qiye_cert}" target="_blank"><img src="__DATA__/{$info.qiye_cert}" style="width:100px;100px;"></a>
+            </div>
+         </li>
+         <li>
+            <div class="d1">法人身份证正面:</div>
+            <div>
+              <a href="__DATA__/{$info.qiyefr_idc_face}" target="_blank"><img src="__DATA__/{$info.qiyefr_idc_face}" style="width:100px;100px;"></a>
+            </div>
+         </li>
+         <li>
+            <div class="d1">法人身份证反面:</div>
+            <div>
+              <a href="__DATA__/{$info.qiyefr_idc_back}" target="_blank"><img src="__DATA__/{$info.qiyefr_idc_back}" style="width:100px;100px;"></a>
+            </div>
+         </li>
+         <if condition="$info.qiye_foodcert">
+         <li>
+           <div style="margin-left:20px;color:red">食品流通后许可证/食品经营许可证</div>
+         </li>
+         <li>
+            <div class="d1">许可证:</div>
+            <div>
+              <a href="__DATA__/{$info.qiye_foodcert}" target="_blank"><img src="__DATA__/{$info.qiye_foodcert}" style="width:100px;100px;"></a>
+            </div>
+         </li>
+         </if>
+         </if>
+         <!-- 企业end -->
+         <!-- 店铺信息 -->
+         <li>
+            <div class="d1">店铺名称:</div>
+            <div>
+              <input class="inp_1" name="shopname" id="shopname" value="{$info.shopname}" readonly="" />
+            </div>
+         </li>
+         <li>
+            <div class="d1">LOGO:</div>
+            <div>
+              <a href="__DATA__/{$info.logo}" target="_blank"><img src="__DATA__/{$info.logo}" style="width:100px;100px;"></a>
+            </div>
+         </li>
+         <li>
+            <div class="d1">店铺简介:</div>
+            <div>
+              <textarea style="width:500px;height:150px;">{$info.digest}</textarea>
+            </div>
+         </li>
+         <!-- 店铺信息end -->
+         <!-- 个人信息 -->        
+         <li>
+            <div class="d1">联系人:</div>
+            <div>
+              <input class="inp_1" name="linkman" id="linkman" value="{$info.linkman}" readonly="" />
+            </div>
+         </li>
+         <li>
+            <div class="d1">电话:</div>
+            <div>
+              <input class="inp_1" name="tel" id="tel" value="{$info.tel}" readonly="" />
+            </div>
+         </li>
+         <li>
+            <div class="d1">身份证号:</div>
+            <div>
+              <input class="inp_1" name="idc_id" id="idc_id" value="{$info.idc_id}" readonly="" />
+            </div>
+         </li>
+         <li>
+            <div class="d1">身份证正面:</div>
+            <div>
+              <a href="__DATA__/{$info.idc_face}" target="_blank"><img src="__DATA__/{$info.idc_face}" style="width:100px;100px;"></a>
+            </div>
+         </li>
+         <li>
+            <div class="d1">身份证反面:</div>
+            <div>
+              <a href="__DATA__/{$info.idc_back}" target="_blank"><img src="__DATA__/{$info.idc_back}" style="width:100px;100px;"></a>
+            </div>
+         </li>
+         <li>
+            <div class="d1">手持身份证:</div>
+            <div>
+              <a href="__DATA__/{$info.idc_photo}" target="_blank"><img src="__DATA__/{$info.idc_photo}" style="width:100px;100px;"></a>
+            </div>
+         </li>
+         <!-- 其他信息 -->
+         <li>
+            <div class="d1">提交时间:</div>
+            <div>
+              <input class="inp_1" name="submittime" id="submittime" value="<?php echo date('Y-m-d H:i:s',$info['submittime'])?>" readonly="" />
+            </div>
+         </li>
+         <li>
+            <div class="d1">是否免费:</div>
+            <div>
+              <input class="inp_1" name="is_free" id="is_free" value="<?php echo $info['is_free']==1 ? '免费':'收费'?>" readonly="" />
+            </div>
+         </li>
+         <if condition="$info.is_free eq 0">
+         <li>
+            <div class="d1">费用:</div>
+            <div>
+              <input class="inp_1" name="fee" id="fee" value="{$info.fee}" readonly="" />
+            </div>
+         </li>
+         </if>
+         
+      </ul>
+      </form>
+         
+    </div>
+    
+</div>
+<script>
+
+</script>
+</body>
+</html>

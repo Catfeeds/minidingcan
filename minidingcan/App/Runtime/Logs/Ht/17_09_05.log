@@ -1,0 +1,749 @@
+[ 2017-09-05T08:18:20+08:00 ] 127.0.0.1 /minidingcanapi/index.php/Ht/Login/index.html
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' D:\phpStudy\WWW\minidingcanapi\App\Common\Conf\debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000389s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001572s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001683s ]
+SQL: SHOW COLUMNS FROM `lr_program` [ RunTime:0.0342s ]
+SQL: SELECT * FROM `lr_program` LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000091s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000187s ]
+NOTIC: [8] Undefined variable: key D:\phpStudy\WWW\minidingcanapi\App\Runtime\Cache\Ht\2d4ce69e9c2d15d777794fcdbaefd3a2.php 第 24 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.026127s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026227s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.008965s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.009056s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.011408s ]
+INFO: [ app_end ] --END-- [ RunTime:0.011504s ]
+
+[ 2017-09-05T08:18:30+08:00 ] 127.0.0.1 /minidingcanapi/index.php/Ht/Login/index.html?key=
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' D:\phpStudy\WWW\minidingcanapi\App\Common\Conf\debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000114s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000856s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000952s ]
+SQL: SHOW COLUMNS FROM `lr_adminuser` [ RunTime:0.0187s ]
+SQL: SELECT * FROM `lr_adminuser` WHERE ( name='admin' AND del<1 ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `lr_program` [ RunTime:0.0044s ]
+SQL: SELECT * FROM `lr_program` LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: shop_id D:\phpStudy\WWW\minidingcanapi\App\Ht\Controller\LoginController.class.php 第 19 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000074s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000165s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.061262s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.061385s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000613s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000683s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000869s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000941s ]
+
+[ 2017-09-05T08:18:31+08:00 ] 127.0.0.1 /minidingcanapi/index.php/Ht/Index/index.html
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' D:\phpStudy\WWW\minidingcanapi\App\Common\Conf\debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000092s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000857s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000950s ]
+SQL: SHOW COLUMNS FROM `lr_web` [ RunTime:0.0111s ]
+SQL: SELECT `concent` FROM `lr_web` WHERE ( id=5 ) LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000163s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000261s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.050799s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.050910s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000696s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000925s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003820s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004144s ]
+
+[ 2017-09-05T08:18:31+08:00 ] 127.0.0.1 /minidingcanapi/index.php/Ht/Index/welcome.html
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' D:\phpStudy\WWW\minidingcanapi\App\Common\Conf\debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000099s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000935s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001057s ]
+SQL: SHOW COLUMNS FROM `lr_order` [ RunTime:0.0197s ]
+SQL: SHOW COLUMNS FROM `lr_user` [ RunTime:0.0284s ]
+SQL: SHOW COLUMNS FROM `lr_product` [ RunTime:0.0268s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lr_order` WHERE ( del=0 ) LIMIT 1   [ RunTime:0.0140s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lr_user` WHERE ( del=0 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lr_product` WHERE ( del=0 ) LIMIT 1   [ RunTime:0.0398s ]
+SQL: SELECT `price` FROM `lr_order` WHERE ( del=0 AND status>10 AND back!=2 )  [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lr_order` WHERE ( del=0 AND addtime>=1504540800 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lr_user` WHERE ( del=0 AND addtime>=1504540800 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lr_product` WHERE ( del=0 AND addtime>=1504540800 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lr_order` WHERE ( del=0 AND status>10 AND back!=2 AND addtime>=1504540800 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\phpStudy\WWW\minidingcanapi\App\Ht\Controller\IndexController.class.php 第 58 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `lr_product` WHERE ( del=0 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lr_product` WHERE ( del=0 AND addtime>=1504540800 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lr_order` WHERE ( del=0 AND back!=2 AND addtime>=1504195200 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lr_user` WHERE ( del=0 AND addtime>=1504195200 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lr_product` WHERE ( del=0 AND addtime>=1504195200 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `price` FROM `lr_order` WHERE ( del=0 AND back!=2 AND addtime>=1504195200 )  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: thismonthpay D:\phpStudy\WWW\minidingcanapi\App\Ht\Controller\IndexController.class.php 第 74 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\phpStudy\WWW\minidingcanapi\App\Ht\Controller\IndexController.class.php 第 74 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000092s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000188s ]
+NOTIC: [8] Undefined variable: shopnum D:\phpStudy\WWW\minidingcanapi\App\Runtime\Cache\Ht\cd0f0ad1047eb68d4f7954defe9252db.php 第 46 行.
+NOTIC: [8] Undefined variable: brandnum D:\phpStudy\WWW\minidingcanapi\App\Runtime\Cache\Ht\cd0f0ad1047eb68d4f7954defe9252db.php 第 50 行.
+NOTIC: [8] Undefined variable: today_shopnum D:\phpStudy\WWW\minidingcanapi\App\Runtime\Cache\Ht\cd0f0ad1047eb68d4f7954defe9252db.php 第 54 行.
+NOTIC: [8] Undefined variable: today_brandnum D:\phpStudy\WWW\minidingcanapi\App\Runtime\Cache\Ht\cd0f0ad1047eb68d4f7954defe9252db.php 第 58 行.
+NOTIC: [8] Undefined variable: thismonth_shopnum D:\phpStudy\WWW\minidingcanapi\App\Runtime\Cache\Ht\cd0f0ad1047eb68d4f7954defe9252db.php 第 62 行.
+NOTIC: [8] Undefined variable: thismonth_brandnum D:\phpStudy\WWW\minidingcanapi\App\Runtime\Cache\Ht\cd0f0ad1047eb68d4f7954defe9252db.php 第 66 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022940s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023033s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000876s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000968s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000961s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001050s ]
+
+[ 2017-09-05T08:19:31+08:00 ] 127.0.0.1 /minidingcanapi/index.php/Ht/Product/index.html
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' D:\phpStudy\WWW\minidingcanapi\App\Common\Conf\debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000094s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000849s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000935s ]
+NOTIC: [8] Undefined index: id D:\phpStudy\WWW\minidingcanapi\App\Ht\Controller\ProductController.class.php 第 14 行.
+NOTIC: [8] Undefined index: type D:\phpStudy\WWW\minidingcanapi\App\Ht\Controller\ProductController.class.php 第 18 行.
+NOTIC: [8] Undefined index: tuijian D:\phpStudy\WWW\minidingcanapi\App\Ht\Controller\ProductController.class.php 第 19 行.
+NOTIC: [8] Undefined index: name D:\phpStudy\WWW\minidingcanapi\App\Ht\Controller\ProductController.class.php 第 20 行.
+SQL: SHOW COLUMNS FROM `lr_product` [ RunTime:0.0063s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lr_product` WHERE ( 1=1 AND pro_type=1 AND del<1 ) LIMIT 1   [ RunTime:0.0022s ]
+NOTIC: [8] Undefined index: page D:\phpStudy\WWW\minidingcanapi\App\Ht\Controller\ProductController.class.php 第 32 行.
+SQL: SELECT * FROM `lr_product` WHERE ( 1=1 AND pro_type=1 AND del<1 ) ORDER BY addtime desc LIMIT 0,20   [ RunTime:0.0013s ]
+SQL: SHOW COLUMNS FROM `lr_pro_cat` [ RunTime:0.0262s ]
+SQL: SELECT `name` FROM `lr_pro_cat` WHERE ( id=11 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `name` FROM `lr_pro_cat` WHERE ( id=10 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `name` FROM `lr_pro_cat` WHERE ( id=8 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `name` FROM `lr_pro_cat` WHERE ( id=6 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `name` FROM `lr_pro_cat` WHERE ( id=11 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `name` FROM `lr_pro_cat` WHERE ( id=7 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `name` FROM `lr_pro_cat` WHERE ( id=5 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `name` FROM `lr_pro_cat` WHERE ( id=5 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `name` FROM `lr_pro_cat` WHERE ( id=9 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `name` FROM `lr_pro_cat` WHERE ( id=4 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `name` FROM `lr_pro_cat` WHERE ( id=4 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `name` FROM `lr_pro_cat` WHERE ( id=3 ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000110s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000215s ]
+NOTIC: [8] Undefined index: shangchang D:\phpStudy\WWW\minidingcanapi\App\Runtime\Cache\Ht\9784c8b2237c9d75fb87a4b6f2ac0396.php 第 52 行.
+NOTIC: [8] Undefined index: pro_buff D:\phpStudy\WWW\minidingcanapi\App\Runtime\Cache\Ht\9784c8b2237c9d75fb87a4b6f2ac0396.php 第 59 行.
+NOTIC: [8] Undefined variable: shop_id D:\phpStudy\WWW\minidingcanapi\App\Runtime\Cache\Ht\9784c8b2237c9d75fb87a4b6f2ac0396.php 第 62 行.
+NOTIC: [8] Undefined variable: shop_id D:\phpStudy\WWW\minidingcanapi\App\Runtime\Cache\Ht\9784c8b2237c9d75fb87a4b6f2ac0396.php 第 64 行.
+NOTIC: [8] Undefined index: shangchang D:\phpStudy\WWW\minidingcanapi\App\Runtime\Cache\Ht\9784c8b2237c9d75fb87a4b6f2ac0396.php 第 52 行.
+NOTIC: [8] Undefined index: pro_buff D:\phpStudy\WWW\minidingcanapi\App\Runtime\Cache\Ht\9784c8b2237c9d75fb87a4b6f2ac0396.php 第 59 行.
+NOTIC: [8] Undefined variable: shop_id D:\phpStudy\WWW\minidingcanapi\App\Runtime\Cache\Ht\9784c8b2237c9d75fb87a4b6f2ac0396.php 第 62 行.
+NOTIC: [8] Undefined variable: shop_id D:\phpStudy\WWW\minidingcanapi\App\Runtime\Cache\Ht\9784c8b2237c9d75fb87a4b6f2ac0396.php 第 64 行.
+NOTIC: [8] Undefined index: shangchang D:\phpStudy\WWW\minidingcanapi\App\Runtime\Cache\Ht\9784c8b2237c9d75fb87a4b6f2ac0396.php 第 52 行.
+NOTIC: [8] Undefined index: pro_buff D:\phpStudy\WWW\minidingcanapi\App\Runtime\Cache\Ht\9784c8b2237c9d75fb87a4b6f2ac0396.php 第 59 行.
+NOTIC: [8] Undefined variable: shop_id D:\phpStudy\WWW\minidingcanapi\App\Runtime\Cache\Ht\9784c8b2237c9d75fb87a4b6f2ac0396.php 第 62 行.
+NOTIC: [8] Undefined variable: shop_id D:\phpStudy\WWW\minidingcanapi\App\Runtime\Cache\Ht\9784c8b2237c9d75fb87a4b6f2ac0396.php 第 64 行.
+NOTIC: [8] Undefined index: shangchang D:\phpStudy\WWW\minidingcanapi\App\Runtime\Cache\Ht\9784c8b2237c9d75fb87a4b6f2ac0396.php 第 52 行.
+NOTIC: [8] Undefined index: pro_buff D:\phpStudy\WWW\minidingcanapi\App\Runtime\Cache\Ht\9784c8b2237c9d75fb87a4b6f2ac0396.php 第 59 行.
+NOTIC: [8] Undefined variable: shop_id D:\phpStudy\WWW\minidingcanapi\App\Runtime\Cache\Ht\9784c8b2237c9d75fb87a4b6f2ac0396.php 第 62 行.
+NOTIC: [8] Undefined variable: shop_id D:\phpStudy\WWW\minidingcanapi\App\Runtime\Cache\Ht\9784c8b2237c9d75fb87a4b6f2ac0396.php 第 64 行.
+NOTIC: [8] Undefined index: shangchang D:\phpStudy\WWW\minidingcanapi\App\Runtime\Cache\Ht\9784c8b2237c9d75fb87a4b6f2ac0396.php 第 52 行.
+NOTIC: [8] Undefined index: pro_buff D:\phpStudy\WWW\minidingcanapi\App\Runtime\Cache\Ht\9784c8b2237c9d75fb87a4b6f2ac0396.php 第 59 行.
+NOTIC: [8] Undefined variable: shop_id D:\phpStudy\WWW\minidingcanapi\App\Runtime\Cache\Ht\9784c8b2237c9d75fb87a4b6f2ac0396.php 第 62 行.
+NOTIC: [8] Undefined variable: shop_id D:\phpStudy\WWW\minidingcanapi\App\Runtime\Cache\Ht\9784c8b2237c9d75fb87a4b6f2ac0396.php 第 64 行.
+NOTIC: [8] Undefined index: shangchang D:\phpStudy\WWW\minidingcanapi\App\Runtime\Cache\Ht\9784c8b2237c9d75fb87a4b6f2ac0396.php 第 52 行.
+NOTIC: [8] Undefined index: pro_buff D:\phpStudy\WWW\minidingcanapi\App\Runtime\Cache\Ht\9784c8b2237c9d75fb87a4b6f2ac0396.php 第 59 行.
+NOTIC: [8] Undefined variable: shop_id D:\phpStudy\WWW\minidingcanapi\App\Runtime\Cache\Ht\9784c8b2237c9d75fb87a4b6f2ac0396.php 第 62 行.
+NOTIC: [8] Undefined variable: shop_id D:\phpStudy\WWW\minidingcanapi\App\Runtime\Cache\Ht\9784c8b2237c9d75fb87a4b6f2ac0396.php 第 64 行.
+NOTIC: [8] Undefined index: shangchang D:\phpStudy\WWW\minidingcanapi\App\Runtime\Cache\Ht\9784c8b2237c9d75fb87a4b6f2ac0396.php 第 52 行.
+NOTIC: [8] Undefined index: pro_buff D:\phpStudy\WWW\minidingcanapi\App\Runtime\Cache\Ht\9784c8b2237c9d75fb87a4b6f2ac0396.php 第 59 行.
+NOTIC: [8] Undefined variable: shop_id D:\phpStudy\WWW\minidingcanapi\App\Runtime\Cache\Ht\9784c8b2237c9d75fb87a4b6f2ac0396.php 第 62 行.
+NOTIC: [8] Undefined variable: shop_id D:\phpStudy\WWW\minidingcanapi\App\Runtime\Cache\Ht\9784c8b2237c9d75fb87a4b6f2ac0396.php 第 64 行.
+NOTIC: [8] Undefined index: shangchang D:\phpStudy\WWW\minidingcanapi\App\Runtime\Cache\Ht\9784c8b2237c9d75fb87a4b6f2ac0396.php 第 52 行.
+NOTIC: [8] Undefined index: pro_buff D:\phpStudy\WWW\minidingcanapi\App\Runtime\Cache\Ht\9784c8b2237c9d75fb87a4b6f2ac0396.php 第 59 行.
+NOTIC: [8] Undefined variable: shop_id D:\phpStudy\WWW\minidingcanapi\App\Runtime\Cache\Ht\9784c8b2237c9d75fb87a4b6f2ac0396.php 第 62 行.
+NOTIC: [8] Undefined variable: shop_id D:\phpStudy\WWW\minidingcanapi\App\Runtime\Cache\Ht\9784c8b2237c9d75fb87a4b6f2ac0396.php 第 64 行.
+NOTIC: [8] Undefined index: shangchang D:\phpStudy\WWW\minidingcanapi\App\Runtime\Cache\Ht\9784c8b2237c9d75fb87a4b6f2ac0396.php 第 52 行.
+NOTIC: [8] Undefined index: pro_buff D:\phpStudy\WWW\minidingcanapi\App\Runtime\Cache\Ht\9784c8b2237c9d75fb87a4b6f2ac0396.php 第 59 行.
+NOTIC: [8] Undefined variable: shop_id D:\phpStudy\WWW\minidingcanapi\App\Runtime\Cache\Ht\9784c8b2237c9d75fb87a4b6f2ac0396.php 第 62 行.
+NOTIC: [8] Undefined variable: shop_id D:\phpStudy\WWW\minidingcanapi\App\Runtime\Cache\Ht\9784c8b2237c9d75fb87a4b6f2ac0396.php 第 64 行.
+NOTIC: [8] Undefined index: shangchang D:\phpStudy\WWW\minidingcanapi\App\Runtime\Cache\Ht\9784c8b2237c9d75fb87a4b6f2ac0396.php 第 52 行.
+NOTIC: [8] Undefined index: pro_buff D:\phpStudy\WWW\minidingcanapi\App\Runtime\Cache\Ht\9784c8b2237c9d75fb87a4b6f2ac0396.php 第 59 行.
+NOTIC: [8] Undefined variable: shop_id D:\phpStudy\WWW\minidingcanapi\App\Runtime\Cache\Ht\9784c8b2237c9d75fb87a4b6f2ac0396.php 第 62 行.
+NOTIC: [8] Undefined variable: shop_id D:\phpStudy\WWW\minidingcanapi\App\Runtime\Cache\Ht\9784c8b2237c9d75fb87a4b6f2ac0396.php 第 64 行.
+NOTIC: [8] Undefined index: shangchang D:\phpStudy\WWW\minidingcanapi\App\Runtime\Cache\Ht\9784c8b2237c9d75fb87a4b6f2ac0396.php 第 52 行.
+NOTIC: [8] Undefined index: pro_buff D:\phpStudy\WWW\minidingcanapi\App\Runtime\Cache\Ht\9784c8b2237c9d75fb87a4b6f2ac0396.php 第 59 行.
+NOTIC: [8] Undefined variable: shop_id D:\phpStudy\WWW\minidingcanapi\App\Runtime\Cache\Ht\9784c8b2237c9d75fb87a4b6f2ac0396.php 第 62 行.
+NOTIC: [8] Undefined variable: shop_id D:\phpStudy\WWW\minidingcanapi\App\Runtime\Cache\Ht\9784c8b2237c9d75fb87a4b6f2ac0396.php 第 64 行.
+NOTIC: [8] Undefined index: shangchang D:\phpStudy\WWW\minidingcanapi\App\Runtime\Cache\Ht\9784c8b2237c9d75fb87a4b6f2ac0396.php 第 52 行.
+NOTIC: [8] Undefined index: pro_buff D:\phpStudy\WWW\minidingcanapi\App\Runtime\Cache\Ht\9784c8b2237c9d75fb87a4b6f2ac0396.php 第 59 行.
+NOTIC: [8] Undefined variable: shop_id D:\phpStudy\WWW\minidingcanapi\App\Runtime\Cache\Ht\9784c8b2237c9d75fb87a4b6f2ac0396.php 第 62 行.
+NOTIC: [8] Undefined variable: shop_id D:\phpStudy\WWW\minidingcanapi\App\Runtime\Cache\Ht\9784c8b2237c9d75fb87a4b6f2ac0396.php 第 64 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.038380s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.038471s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000658s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000732s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003973s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004083s ]
+
+[ 2017-09-05T08:19:38+08:00 ] 127.0.0.1 /minidingcanapi/index.php/Ht/Product/index.html
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' D:\phpStudy\WWW\minidingcanapi\App\Common\Conf\debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000094s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000892s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000991s ]
+NOTIC: [8] Undefined index: id D:\phpStudy\WWW\minidingcanapi\App\Ht\Controller\ProductController.class.php 第 14 行.
+NOTIC: [8] Undefined index: type D:\phpStudy\WWW\minidingcanapi\App\Ht\Controller\ProductController.class.php 第 18 行.
+NOTIC: [8] Undefined index: tuijian D:\phpStudy\WWW\minidingcanapi\App\Ht\Controller\ProductController.class.php 第 19 行.
+NOTIC: [8] Undefined index: name D:\phpStudy\WWW\minidingcanapi\App\Ht\Controller\ProductController.class.php 第 20 行.
+SQL: SHOW COLUMNS FROM `lr_product` [ RunTime:0.0047s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lr_product` WHERE ( 1=1 AND pro_type=1 AND del<1 ) LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: page D:\phpStudy\WWW\minidingcanapi\App\Ht\Controller\ProductController.class.php 第 32 行.
+SQL: SELECT * FROM `lr_product` WHERE ( 1=1 AND pro_type=1 AND del<1 ) ORDER BY addtime desc LIMIT 0,20   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `lr_pro_cat` [ RunTime:0.0043s ]
+SQL: SELECT `name` FROM `lr_pro_cat` WHERE ( id=11 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `name` FROM `lr_pro_cat` WHERE ( id=10 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `name` FROM `lr_pro_cat` WHERE ( id=8 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `name` FROM `lr_pro_cat` WHERE ( id=6 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `name` FROM `lr_pro_cat` WHERE ( id=11 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `name` FROM `lr_pro_cat` WHERE ( id=7 ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT `name` FROM `lr_pro_cat` WHERE ( id=5 ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT `name` FROM `lr_pro_cat` WHERE ( id=5 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `name` FROM `lr_pro_cat` WHERE ( id=9 ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT `name` FROM `lr_pro_cat` WHERE ( id=4 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `name` FROM `lr_pro_cat` WHERE ( id=4 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `name` FROM `lr_pro_cat` WHERE ( id=3 ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000111s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000224s ]
+NOTIC: [8] Undefined index: shangchang D:\phpStudy\WWW\minidingcanapi\App\Runtime\Cache\Ht\9784c8b2237c9d75fb87a4b6f2ac0396.php 第 52 行.
+NOTIC: [8] Undefined index: pro_buff D:\phpStudy\WWW\minidingcanapi\App\Runtime\Cache\Ht\9784c8b2237c9d75fb87a4b6f2ac0396.php 第 59 行.
+NOTIC: [8] Undefined variable: shop_id D:\phpStudy\WWW\minidingcanapi\App\Runtime\Cache\Ht\9784c8b2237c9d75fb87a4b6f2ac0396.php 第 62 行.
+NOTIC: [8] Undefined variable: shop_id D:\phpStudy\WWW\minidingcanapi\App\Runtime\Cache\Ht\9784c8b2237c9d75fb87a4b6f2ac0396.php 第 64 行.
+NOTIC: [8] Undefined index: shangchang D:\phpStudy\WWW\minidingcanapi\App\Runtime\Cache\Ht\9784c8b2237c9d75fb87a4b6f2ac0396.php 第 52 行.
+NOTIC: [8] Undefined index: pro_buff D:\phpStudy\WWW\minidingcanapi\App\Runtime\Cache\Ht\9784c8b2237c9d75fb87a4b6f2ac0396.php 第 59 行.
+NOTIC: [8] Undefined variable: shop_id D:\phpStudy\WWW\minidingcanapi\App\Runtime\Cache\Ht\9784c8b2237c9d75fb87a4b6f2ac0396.php 第 62 行.
+NOTIC: [8] Undefined variable: shop_id D:\phpStudy\WWW\minidingcanapi\App\Runtime\Cache\Ht\9784c8b2237c9d75fb87a4b6f2ac0396.php 第 64 行.
+NOTIC: [8] Undefined index: shangchang D:\phpStudy\WWW\minidingcanapi\App\Runtime\Cache\Ht\9784c8b2237c9d75fb87a4b6f2ac0396.php 第 52 行.
+NOTIC: [8] Undefined index: pro_buff D:\phpStudy\WWW\minidingcanapi\App\Runtime\Cache\Ht\9784c8b2237c9d75fb87a4b6f2ac0396.php 第 59 行.
+NOTIC: [8] Undefined variable: shop_id D:\phpStudy\WWW\minidingcanapi\App\Runtime\Cache\Ht\9784c8b2237c9d75fb87a4b6f2ac0396.php 第 62 行.
+NOTIC: [8] Undefined variable: shop_id D:\phpStudy\WWW\minidingcanapi\App\Runtime\Cache\Ht\9784c8b2237c9d75fb87a4b6f2ac0396.php 第 64 行.
+NOTIC: [8] Undefined index: shangchang D:\phpStudy\WWW\minidingcanapi\App\Runtime\Cache\Ht\9784c8b2237c9d75fb87a4b6f2ac0396.php 第 52 行.
+NOTIC: [8] Undefined index: pro_buff D:\phpStudy\WWW\minidingcanapi\App\Runtime\Cache\Ht\9784c8b2237c9d75fb87a4b6f2ac0396.php 第 59 行.
+NOTIC: [8] Undefined variable: shop_id D:\phpStudy\WWW\minidingcanapi\App\Runtime\Cache\Ht\9784c8b2237c9d75fb87a4b6f2ac0396.php 第 62 行.
+NOTIC: [8] Undefined variable: shop_id D:\phpStudy\WWW\minidingcanapi\App\Runtime\Cache\Ht\9784c8b2237c9d75fb87a4b6f2ac0396.php 第 64 行.
+NOTIC: [8] Undefined index: shangchang D:\phpStudy\WWW\minidingcanapi\App\Runtime\Cache\Ht\9784c8b2237c9d75fb87a4b6f2ac0396.php 第 52 行.
+NOTIC: [8] Undefined index: pro_buff D:\phpStudy\WWW\minidingcanapi\App\Runtime\Cache\Ht\9784c8b2237c9d75fb87a4b6f2ac0396.php 第 59 行.
+NOTIC: [8] Undefined variable: shop_id D:\phpStudy\WWW\minidingcanapi\App\Runtime\Cache\Ht\9784c8b2237c9d75fb87a4b6f2ac0396.php 第 62 行.
+NOTIC: [8] Undefined variable: shop_id D:\phpStudy\WWW\minidingcanapi\App\Runtime\Cache\Ht\9784c8b2237c9d75fb87a4b6f2ac0396.php 第 64 行.
+NOTIC: [8] Undefined index: shangchang D:\phpStudy\WWW\minidingcanapi\App\Runtime\Cache\Ht\9784c8b2237c9d75fb87a4b6f2ac0396.php 第 52 行.
+NOTIC: [8] Undefined index: pro_buff D:\phpStudy\WWW\minidingcanapi\App\Runtime\Cache\Ht\9784c8b2237c9d75fb87a4b6f2ac0396.php 第 59 行.
+NOTIC: [8] Undefined variable: shop_id D:\phpStudy\WWW\minidingcanapi\App\Runtime\Cache\Ht\9784c8b2237c9d75fb87a4b6f2ac0396.php 第 62 行.
+NOTIC: [8] Undefined variable: shop_id D:\phpStudy\WWW\minidingcanapi\App\Runtime\Cache\Ht\9784c8b2237c9d75fb87a4b6f2ac0396.php 第 64 行.
+NOTIC: [8] Undefined index: shangchang D:\phpStudy\WWW\minidingcanapi\App\Runtime\Cache\Ht\9784c8b2237c9d75fb87a4b6f2ac0396.php 第 52 行.
+NOTIC: [8] Undefined index: pro_buff D:\phpStudy\WWW\minidingcanapi\App\Runtime\Cache\Ht\9784c8b2237c9d75fb87a4b6f2ac0396.php 第 59 行.
+NOTIC: [8] Undefined variable: shop_id D:\phpStudy\WWW\minidingcanapi\App\Runtime\Cache\Ht\9784c8b2237c9d75fb87a4b6f2ac0396.php 第 62 行.
+NOTIC: [8] Undefined variable: shop_id D:\phpStudy\WWW\minidingcanapi\App\Runtime\Cache\Ht\9784c8b2237c9d75fb87a4b6f2ac0396.php 第 64 行.
+NOTIC: [8] Undefined index: shangchang D:\phpStudy\WWW\minidingcanapi\App\Runtime\Cache\Ht\9784c8b2237c9d75fb87a4b6f2ac0396.php 第 52 行.
+NOTIC: [8] Undefined index: pro_buff D:\phpStudy\WWW\minidingcanapi\App\Runtime\Cache\Ht\9784c8b2237c9d75fb87a4b6f2ac0396.php 第 59 行.
+NOTIC: [8] Undefined variable: shop_id D:\phpStudy\WWW\minidingcanapi\App\Runtime\Cache\Ht\9784c8b2237c9d75fb87a4b6f2ac0396.php 第 62 行.
+NOTIC: [8] Undefined variable: shop_id D:\phpStudy\WWW\minidingcanapi\App\Runtime\Cache\Ht\9784c8b2237c9d75fb87a4b6f2ac0396.php 第 64 行.
+NOTIC: [8] Undefined index: shangchang D:\phpStudy\WWW\minidingcanapi\App\Runtime\Cache\Ht\9784c8b2237c9d75fb87a4b6f2ac0396.php 第 52 行.
+NOTIC: [8] Undefined index: pro_buff D:\phpStudy\WWW\minidingcanapi\App\Runtime\Cache\Ht\9784c8b2237c9d75fb87a4b6f2ac0396.php 第 59 行.
+NOTIC: [8] Undefined variable: shop_id D:\phpStudy\WWW\minidingcanapi\App\Runtime\Cache\Ht\9784c8b2237c9d75fb87a4b6f2ac0396.php 第 62 行.
+NOTIC: [8] Undefined variable: shop_id D:\phpStudy\WWW\minidingcanapi\App\Runtime\Cache\Ht\9784c8b2237c9d75fb87a4b6f2ac0396.php 第 64 行.
+NOTIC: [8] Undefined index: shangchang D:\phpStudy\WWW\minidingcanapi\App\Runtime\Cache\Ht\9784c8b2237c9d75fb87a4b6f2ac0396.php 第 52 行.
+NOTIC: [8] Undefined index: pro_buff D:\phpStudy\WWW\minidingcanapi\App\Runtime\Cache\Ht\9784c8b2237c9d75fb87a4b6f2ac0396.php 第 59 行.
+NOTIC: [8] Undefined variable: shop_id D:\phpStudy\WWW\minidingcanapi\App\Runtime\Cache\Ht\9784c8b2237c9d75fb87a4b6f2ac0396.php 第 62 行.
+NOTIC: [8] Undefined variable: shop_id D:\phpStudy\WWW\minidingcanapi\App\Runtime\Cache\Ht\9784c8b2237c9d75fb87a4b6f2ac0396.php 第 64 行.
+NOTIC: [8] Undefined index: shangchang D:\phpStudy\WWW\minidingcanapi\App\Runtime\Cache\Ht\9784c8b2237c9d75fb87a4b6f2ac0396.php 第 52 行.
+NOTIC: [8] Undefined index: pro_buff D:\phpStudy\WWW\minidingcanapi\App\Runtime\Cache\Ht\9784c8b2237c9d75fb87a4b6f2ac0396.php 第 59 行.
+NOTIC: [8] Undefined variable: shop_id D:\phpStudy\WWW\minidingcanapi\App\Runtime\Cache\Ht\9784c8b2237c9d75fb87a4b6f2ac0396.php 第 62 行.
+NOTIC: [8] Undefined variable: shop_id D:\phpStudy\WWW\minidingcanapi\App\Runtime\Cache\Ht\9784c8b2237c9d75fb87a4b6f2ac0396.php 第 64 行.
+NOTIC: [8] Undefined index: shangchang D:\phpStudy\WWW\minidingcanapi\App\Runtime\Cache\Ht\9784c8b2237c9d75fb87a4b6f2ac0396.php 第 52 行.
+NOTIC: [8] Undefined index: pro_buff D:\phpStudy\WWW\minidingcanapi\App\Runtime\Cache\Ht\9784c8b2237c9d75fb87a4b6f2ac0396.php 第 59 行.
+NOTIC: [8] Undefined variable: shop_id D:\phpStudy\WWW\minidingcanapi\App\Runtime\Cache\Ht\9784c8b2237c9d75fb87a4b6f2ac0396.php 第 62 行.
+NOTIC: [8] Undefined variable: shop_id D:\phpStudy\WWW\minidingcanapi\App\Runtime\Cache\Ht\9784c8b2237c9d75fb87a4b6f2ac0396.php 第 64 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018712s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018802s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000642s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000712s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003813s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003924s ]
+
+[ 2017-09-05T08:19:39+08:00 ] 127.0.0.1 /minidingcanapi/index.php/Ht/Product/add.html
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' D:\phpStudy\WWW\minidingcanapi\App\Common\Conf\debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000093s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001644s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001802s ]
+NOTIC: [8] Undefined index: id D:\phpStudy\WWW\minidingcanapi\App\Ht\Controller\ProductController.class.php 第 65 行.
+NOTIC: [8] Undefined index: page D:\phpStudy\WWW\minidingcanapi\App\Ht\Controller\ProductController.class.php 第 66 行.
+NOTIC: [8] Undefined index: name D:\phpStudy\WWW\minidingcanapi\App\Ht\Controller\ProductController.class.php 第 67 行.
+NOTIC: [8] Undefined index: type D:\phpStudy\WWW\minidingcanapi\App\Ht\Controller\ProductController.class.php 第 68 行.
+NOTIC: [8] Undefined index: submit D:\phpStudy\WWW\minidingcanapi\App\Ht\Controller\ProductController.class.php 第 70 行.
+SQL: SHOW COLUMNS FROM `lr_pro_cat` [ RunTime:0.0121s ]
+SQL: SELECT `id`,`name` FROM `lr_pro_cat` WHERE ( del=0 )  [ RunTime:0.0004s ]
+NOTIC: [8] Uninitialized string offset: 0 D:\phpStudy\WWW\minidingcanapi\App\Ht\Controller\ProductController.class.php 第 226 行.
+NOTIC: [8] Undefined variable: shop_id D:\phpStudy\WWW\minidingcanapi\App\Ht\Controller\ProductController.class.php 第 243 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000157s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000243s ]
+NOTIC: [8] Undefined variable: img D:\phpStudy\WWW\minidingcanapi\App\Runtime\Cache\Ht\04b33691f63b9c13a9ceae31ee771556.php 第 14 行.
+NOTIC: [8] Undefined variable: img D:\phpStudy\WWW\minidingcanapi\App\Runtime\Cache\Ht\04b33691f63b9c13a9ceae31ee771556.php 第 14 行.
+NOTIC: [8] Undefined variable: img D:\phpStudy\WWW\minidingcanapi\App\Runtime\Cache\Ht\04b33691f63b9c13a9ceae31ee771556.php 第 14 行.
+NOTIC: [2] Division by zero D:\phpStudy\WWW\minidingcanapi\App\Runtime\Cache\Ht\04b33691f63b9c13a9ceae31ee771556.php 第 14 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\phpStudy\WWW\minidingcanapi\App\Runtime\Cache\Ht\04b33691f63b9c13a9ceae31ee771556.php 第 77 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\phpStudy\WWW\minidingcanapi\App\Runtime\Cache\Ht\04b33691f63b9c13a9ceae31ee771556.php 第 83 行.
+NOTIC: [8] Undefined variable: shangchang D:\phpStudy\WWW\minidingcanapi\App\Runtime\Cache\Ht\04b33691f63b9c13a9ceae31ee771556.php 第 90 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\phpStudy\WWW\minidingcanapi\App\Runtime\Cache\Ht\04b33691f63b9c13a9ceae31ee771556.php 第 91 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\phpStudy\WWW\minidingcanapi\App\Runtime\Cache\Ht\04b33691f63b9c13a9ceae31ee771556.php 第 103 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\phpStudy\WWW\minidingcanapi\App\Runtime\Cache\Ht\04b33691f63b9c13a9ceae31ee771556.php 第 103 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\phpStudy\WWW\minidingcanapi\App\Runtime\Cache\Ht\04b33691f63b9c13a9ceae31ee771556.php 第 103 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\phpStudy\WWW\minidingcanapi\App\Runtime\Cache\Ht\04b33691f63b9c13a9ceae31ee771556.php 第 103 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\phpStudy\WWW\minidingcanapi\App\Runtime\Cache\Ht\04b33691f63b9c13a9ceae31ee771556.php 第 103 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\phpStudy\WWW\minidingcanapi\App\Runtime\Cache\Ht\04b33691f63b9c13a9ceae31ee771556.php 第 103 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\phpStudy\WWW\minidingcanapi\App\Runtime\Cache\Ht\04b33691f63b9c13a9ceae31ee771556.php 第 103 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\phpStudy\WWW\minidingcanapi\App\Runtime\Cache\Ht\04b33691f63b9c13a9ceae31ee771556.php 第 103 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\phpStudy\WWW\minidingcanapi\App\Runtime\Cache\Ht\04b33691f63b9c13a9ceae31ee771556.php 第 103 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\phpStudy\WWW\minidingcanapi\App\Runtime\Cache\Ht\04b33691f63b9c13a9ceae31ee771556.php 第 116 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\phpStudy\WWW\minidingcanapi\App\Runtime\Cache\Ht\04b33691f63b9c13a9ceae31ee771556.php 第 125 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\phpStudy\WWW\minidingcanapi\App\Runtime\Cache\Ht\04b33691f63b9c13a9ceae31ee771556.php 第 131 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\phpStudy\WWW\minidingcanapi\App\Runtime\Cache\Ht\04b33691f63b9c13a9ceae31ee771556.php 第 137 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\phpStudy\WWW\minidingcanapi\App\Runtime\Cache\Ht\04b33691f63b9c13a9ceae31ee771556.php 第 145 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\phpStudy\WWW\minidingcanapi\App\Runtime\Cache\Ht\04b33691f63b9c13a9ceae31ee771556.php 第 155 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\phpStudy\WWW\minidingcanapi\App\Runtime\Cache\Ht\04b33691f63b9c13a9ceae31ee771556.php 第 168 行.
+NOTIC: [8] Undefined variable: img_str D:\phpStudy\WWW\minidingcanapi\App\Runtime\Cache\Ht\04b33691f63b9c13a9ceae31ee771556.php 第 178 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\phpStudy\WWW\minidingcanapi\App\Runtime\Cache\Ht\04b33691f63b9c13a9ceae31ee771556.php 第 208 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\phpStudy\WWW\minidingcanapi\App\Runtime\Cache\Ht\04b33691f63b9c13a9ceae31ee771556.php 第 214 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\phpStudy\WWW\minidingcanapi\App\Runtime\Cache\Ht\04b33691f63b9c13a9ceae31ee771556.php 第 223 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\phpStudy\WWW\minidingcanapi\App\Runtime\Cache\Ht\04b33691f63b9c13a9ceae31ee771556.php 第 229 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\phpStudy\WWW\minidingcanapi\App\Runtime\Cache\Ht\04b33691f63b9c13a9ceae31ee771556.php 第 235 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\phpStudy\WWW\minidingcanapi\App\Runtime\Cache\Ht\04b33691f63b9c13a9ceae31ee771556.php 第 241 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\phpStudy\WWW\minidingcanapi\App\Runtime\Cache\Ht\04b33691f63b9c13a9ceae31ee771556.php 第 242 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\phpStudy\WWW\minidingcanapi\App\Runtime\Cache\Ht\04b33691f63b9c13a9ceae31ee771556.php 第 246 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.044557s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.044698s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000634s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000702s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003831s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004000s ]
+
+[ 2017-09-05T08:19:40+08:00 ] 127.0.0.1 /minidingcanapi/index.php/Ht/Product/index.html
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' D:\phpStudy\WWW\minidingcanapi\App\Common\Conf\debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000095s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000866s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000953s ]
+NOTIC: [8] Undefined index: id D:\phpStudy\WWW\minidingcanapi\App\Ht\Controller\ProductController.class.php 第 14 行.
+NOTIC: [8] Undefined index: type D:\phpStudy\WWW\minidingcanapi\App\Ht\Controller\ProductController.class.php 第 18 行.
+NOTIC: [8] Undefined index: tuijian D:\phpStudy\WWW\minidingcanapi\App\Ht\Controller\ProductController.class.php 第 19 行.
+NOTIC: [8] Undefined index: name D:\phpStudy\WWW\minidingcanapi\App\Ht\Controller\ProductController.class.php 第 20 行.
+SQL: SHOW COLUMNS FROM `lr_product` [ RunTime:0.0049s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lr_product` WHERE ( 1=1 AND pro_type=1 AND del<1 ) LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: page D:\phpStudy\WWW\minidingcanapi\App\Ht\Controller\ProductController.class.php 第 32 行.
+SQL: SELECT * FROM `lr_product` WHERE ( 1=1 AND pro_type=1 AND del<1 ) ORDER BY addtime desc LIMIT 0,20   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `lr_pro_cat` [ RunTime:0.0050s ]
+SQL: SELECT `name` FROM `lr_pro_cat` WHERE ( id=11 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `name` FROM `lr_pro_cat` WHERE ( id=10 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `name` FROM `lr_pro_cat` WHERE ( id=8 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `name` FROM `lr_pro_cat` WHERE ( id=6 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `name` FROM `lr_pro_cat` WHERE ( id=11 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `name` FROM `lr_pro_cat` WHERE ( id=7 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `name` FROM `lr_pro_cat` WHERE ( id=5 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `name` FROM `lr_pro_cat` WHERE ( id=5 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `name` FROM `lr_pro_cat` WHERE ( id=9 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `name` FROM `lr_pro_cat` WHERE ( id=4 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `name` FROM `lr_pro_cat` WHERE ( id=4 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `name` FROM `lr_pro_cat` WHERE ( id=3 ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000129s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000266s ]
+NOTIC: [8] Undefined index: shangchang D:\phpStudy\WWW\minidingcanapi\App\Runtime\Cache\Ht\9784c8b2237c9d75fb87a4b6f2ac0396.php 第 52 行.
+NOTIC: [8] Undefined index: pro_buff D:\phpStudy\WWW\minidingcanapi\App\Runtime\Cache\Ht\9784c8b2237c9d75fb87a4b6f2ac0396.php 第 59 行.
+NOTIC: [8] Undefined variable: shop_id D:\phpStudy\WWW\minidingcanapi\App\Runtime\Cache\Ht\9784c8b2237c9d75fb87a4b6f2ac0396.php 第 62 行.
+NOTIC: [8] Undefined variable: shop_id D:\phpStudy\WWW\minidingcanapi\App\Runtime\Cache\Ht\9784c8b2237c9d75fb87a4b6f2ac0396.php 第 64 行.
+NOTIC: [8] Undefined index: shangchang D:\phpStudy\WWW\minidingcanapi\App\Runtime\Cache\Ht\9784c8b2237c9d75fb87a4b6f2ac0396.php 第 52 行.
+NOTIC: [8] Undefined index: pro_buff D:\phpStudy\WWW\minidingcanapi\App\Runtime\Cache\Ht\9784c8b2237c9d75fb87a4b6f2ac0396.php 第 59 行.
+NOTIC: [8] Undefined variable: shop_id D:\phpStudy\WWW\minidingcanapi\App\Runtime\Cache\Ht\9784c8b2237c9d75fb87a4b6f2ac0396.php 第 62 行.
+NOTIC: [8] Undefined variable: shop_id D:\phpStudy\WWW\minidingcanapi\App\Runtime\Cache\Ht\9784c8b2237c9d75fb87a4b6f2ac0396.php 第 64 行.
+NOTIC: [8] Undefined index: shangchang D:\phpStudy\WWW\minidingcanapi\App\Runtime\Cache\Ht\9784c8b2237c9d75fb87a4b6f2ac0396.php 第 52 行.
+NOTIC: [8] Undefined index: pro_buff D:\phpStudy\WWW\minidingcanapi\App\Runtime\Cache\Ht\9784c8b2237c9d75fb87a4b6f2ac0396.php 第 59 行.
+NOTIC: [8] Undefined variable: shop_id D:\phpStudy\WWW\minidingcanapi\App\Runtime\Cache\Ht\9784c8b2237c9d75fb87a4b6f2ac0396.php 第 62 行.
+NOTIC: [8] Undefined variable: shop_id D:\phpStudy\WWW\minidingcanapi\App\Runtime\Cache\Ht\9784c8b2237c9d75fb87a4b6f2ac0396.php 第 64 行.
+NOTIC: [8] Undefined index: shangchang D:\phpStudy\WWW\minidingcanapi\App\Runtime\Cache\Ht\9784c8b2237c9d75fb87a4b6f2ac0396.php 第 52 行.
+NOTIC: [8] Undefined index: pro_buff D:\phpStudy\WWW\minidingcanapi\App\Runtime\Cache\Ht\9784c8b2237c9d75fb87a4b6f2ac0396.php 第 59 行.
+NOTIC: [8] Undefined variable: shop_id D:\phpStudy\WWW\minidingcanapi\App\Runtime\Cache\Ht\9784c8b2237c9d75fb87a4b6f2ac0396.php 第 62 行.
+NOTIC: [8] Undefined variable: shop_id D:\phpStudy\WWW\minidingcanapi\App\Runtime\Cache\Ht\9784c8b2237c9d75fb87a4b6f2ac0396.php 第 64 行.
+NOTIC: [8] Undefined index: shangchang D:\phpStudy\WWW\minidingcanapi\App\Runtime\Cache\Ht\9784c8b2237c9d75fb87a4b6f2ac0396.php 第 52 行.
+NOTIC: [8] Undefined index: pro_buff D:\phpStudy\WWW\minidingcanapi\App\Runtime\Cache\Ht\9784c8b2237c9d75fb87a4b6f2ac0396.php 第 59 行.
+NOTIC: [8] Undefined variable: shop_id D:\phpStudy\WWW\minidingcanapi\App\Runtime\Cache\Ht\9784c8b2237c9d75fb87a4b6f2ac0396.php 第 62 行.
+NOTIC: [8] Undefined variable: shop_id D:\phpStudy\WWW\minidingcanapi\App\Runtime\Cache\Ht\9784c8b2237c9d75fb87a4b6f2ac0396.php 第 64 行.
+NOTIC: [8] Undefined index: shangchang D:\phpStudy\WWW\minidingcanapi\App\Runtime\Cache\Ht\9784c8b2237c9d75fb87a4b6f2ac0396.php 第 52 行.
+NOTIC: [8] Undefined index: pro_buff D:\phpStudy\WWW\minidingcanapi\App\Runtime\Cache\Ht\9784c8b2237c9d75fb87a4b6f2ac0396.php 第 59 行.
+NOTIC: [8] Undefined variable: shop_id D:\phpStudy\WWW\minidingcanapi\App\Runtime\Cache\Ht\9784c8b2237c9d75fb87a4b6f2ac0396.php 第 62 行.
+NOTIC: [8] Undefined variable: shop_id D:\phpStudy\WWW\minidingcanapi\App\Runtime\Cache\Ht\9784c8b2237c9d75fb87a4b6f2ac0396.php 第 64 行.
+NOTIC: [8] Undefined index: shangchang D:\phpStudy\WWW\minidingcanapi\App\Runtime\Cache\Ht\9784c8b2237c9d75fb87a4b6f2ac0396.php 第 52 行.
+NOTIC: [8] Undefined index: pro_buff D:\phpStudy\WWW\minidingcanapi\App\Runtime\Cache\Ht\9784c8b2237c9d75fb87a4b6f2ac0396.php 第 59 行.
+NOTIC: [8] Undefined variable: shop_id D:\phpStudy\WWW\minidingcanapi\App\Runtime\Cache\Ht\9784c8b2237c9d75fb87a4b6f2ac0396.php 第 62 行.
+NOTIC: [8] Undefined variable: shop_id D:\phpStudy\WWW\minidingcanapi\App\Runtime\Cache\Ht\9784c8b2237c9d75fb87a4b6f2ac0396.php 第 64 行.
+NOTIC: [8] Undefined index: shangchang D:\phpStudy\WWW\minidingcanapi\App\Runtime\Cache\Ht\9784c8b2237c9d75fb87a4b6f2ac0396.php 第 52 行.
+NOTIC: [8] Undefined index: pro_buff D:\phpStudy\WWW\minidingcanapi\App\Runtime\Cache\Ht\9784c8b2237c9d75fb87a4b6f2ac0396.php 第 59 行.
+NOTIC: [8] Undefined variable: shop_id D:\phpStudy\WWW\minidingcanapi\App\Runtime\Cache\Ht\9784c8b2237c9d75fb87a4b6f2ac0396.php 第 62 行.
+NOTIC: [8] Undefined variable: shop_id D:\phpStudy\WWW\minidingcanapi\App\Runtime\Cache\Ht\9784c8b2237c9d75fb87a4b6f2ac0396.php 第 64 行.
+NOTIC: [8] Undefined index: shangchang D:\phpStudy\WWW\minidingcanapi\App\Runtime\Cache\Ht\9784c8b2237c9d75fb87a4b6f2ac0396.php 第 52 行.
+NOTIC: [8] Undefined index: pro_buff D:\phpStudy\WWW\minidingcanapi\App\Runtime\Cache\Ht\9784c8b2237c9d75fb87a4b6f2ac0396.php 第 59 行.
+NOTIC: [8] Undefined variable: shop_id D:\phpStudy\WWW\minidingcanapi\App\Runtime\Cache\Ht\9784c8b2237c9d75fb87a4b6f2ac0396.php 第 62 行.
+NOTIC: [8] Undefined variable: shop_id D:\phpStudy\WWW\minidingcanapi\App\Runtime\Cache\Ht\9784c8b2237c9d75fb87a4b6f2ac0396.php 第 64 行.
+NOTIC: [8] Undefined index: shangchang D:\phpStudy\WWW\minidingcanapi\App\Runtime\Cache\Ht\9784c8b2237c9d75fb87a4b6f2ac0396.php 第 52 行.
+NOTIC: [8] Undefined index: pro_buff D:\phpStudy\WWW\minidingcanapi\App\Runtime\Cache\Ht\9784c8b2237c9d75fb87a4b6f2ac0396.php 第 59 行.
+NOTIC: [8] Undefined variable: shop_id D:\phpStudy\WWW\minidingcanapi\App\Runtime\Cache\Ht\9784c8b2237c9d75fb87a4b6f2ac0396.php 第 62 行.
+NOTIC: [8] Undefined variable: shop_id D:\phpStudy\WWW\minidingcanapi\App\Runtime\Cache\Ht\9784c8b2237c9d75fb87a4b6f2ac0396.php 第 64 行.
+NOTIC: [8] Undefined index: shangchang D:\phpStudy\WWW\minidingcanapi\App\Runtime\Cache\Ht\9784c8b2237c9d75fb87a4b6f2ac0396.php 第 52 行.
+NOTIC: [8] Undefined index: pro_buff D:\phpStudy\WWW\minidingcanapi\App\Runtime\Cache\Ht\9784c8b2237c9d75fb87a4b6f2ac0396.php 第 59 行.
+NOTIC: [8] Undefined variable: shop_id D:\phpStudy\WWW\minidingcanapi\App\Runtime\Cache\Ht\9784c8b2237c9d75fb87a4b6f2ac0396.php 第 62 行.
+NOTIC: [8] Undefined variable: shop_id D:\phpStudy\WWW\minidingcanapi\App\Runtime\Cache\Ht\9784c8b2237c9d75fb87a4b6f2ac0396.php 第 64 行.
+NOTIC: [8] Undefined index: shangchang D:\phpStudy\WWW\minidingcanapi\App\Runtime\Cache\Ht\9784c8b2237c9d75fb87a4b6f2ac0396.php 第 52 行.
+NOTIC: [8] Undefined index: pro_buff D:\phpStudy\WWW\minidingcanapi\App\Runtime\Cache\Ht\9784c8b2237c9d75fb87a4b6f2ac0396.php 第 59 行.
+NOTIC: [8] Undefined variable: shop_id D:\phpStudy\WWW\minidingcanapi\App\Runtime\Cache\Ht\9784c8b2237c9d75fb87a4b6f2ac0396.php 第 62 行.
+NOTIC: [8] Undefined variable: shop_id D:\phpStudy\WWW\minidingcanapi\App\Runtime\Cache\Ht\9784c8b2237c9d75fb87a4b6f2ac0396.php 第 64 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018175s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018263s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000626s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000696s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003828s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003976s ]
+
+[ 2017-09-05T08:30:56+08:00 ] 127.0.0.1 /minidingcanapi/index.php/Ht/More/indeximg.html
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' D:\phpStudy\WWW\minidingcanapi\App\Common\Conf\debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000094s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001637s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001809s ]
+SQL: SHOW COLUMNS FROM `lr_indeximg` [ RunTime:0.0044s ]
+SQL: SELECT * FROM `lr_indeximg` WHERE ( 1=1 ) ORDER BY sort asc  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000083s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000169s ]
+NOTIC: [8] Undefined index: link D:\phpStudy\WWW\minidingcanapi\App\Runtime\Cache\Ht\03a19c76e15009757023fb9a3bd0268e.php 第 29 行.
+NOTIC: [8] Undefined index: link D:\phpStudy\WWW\minidingcanapi\App\Runtime\Cache\Ht\03a19c76e15009757023fb9a3bd0268e.php 第 29 行.
+NOTIC: [8] Undefined index: link D:\phpStudy\WWW\minidingcanapi\App\Runtime\Cache\Ht\03a19c76e15009757023fb9a3bd0268e.php 第 29 行.
+NOTIC: [8] Undefined index: link D:\phpStudy\WWW\minidingcanapi\App\Runtime\Cache\Ht\03a19c76e15009757023fb9a3bd0268e.php 第 29 行.
+NOTIC: [8] Undefined variable: page_index D:\phpStudy\WWW\minidingcanapi\App\Runtime\Cache\Ht\03a19c76e15009757023fb9a3bd0268e.php 第 38 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031029s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031144s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001099s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001174s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001295s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001370s ]
+
+[ 2017-09-05T08:30:57+08:00 ] 127.0.0.1 /minidingcanapi/index.php/Ht/More/setup.html
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' D:\phpStudy\WWW\minidingcanapi\App\Common\Conf\debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000092s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001049s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001154s ]
+SQL: SHOW COLUMNS FROM `lr_program` [ RunTime:0.0064s ]
+SQL: SELECT * FROM `lr_program` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000090s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000180s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022839s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022936s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001055s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001130s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001296s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001373s ]
+
+[ 2017-09-05T08:33:38+08:00 ] 127.0.0.1 /minidingcanapi/index.php/Ht/More/setup.html
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' D:\phpStudy\WWW\minidingcanapi\App\Common\Conf\debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000094s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001446s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001542s ]
+SQL: SHOW COLUMNS FROM `lr_program` [ RunTime:0.0043s ]
+SQL: SELECT * FROM `lr_program` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000096s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000192s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012674s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012793s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001166s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001253s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001406s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001491s ]
+
+[ 2017-09-05T08:34:52+08:00 ] 127.0.0.1 /minidingcanapi/index.php/Ht/More/setup.html
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' D:\phpStudy\WWW\minidingcanapi\App\Common\Conf\debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000093s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000856s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000942s ]
+SQL: SHOW COLUMNS FROM `lr_program` [ RunTime:0.0045s ]
+SQL: SELECT * FROM `lr_program` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000098s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000191s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011389s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011486s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001074s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001148s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001321s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001397s ]
+
+[ 2017-09-05T08:37:43+08:00 ] 127.0.0.1 /minidingcanapi/index.php/Ht/More/setup.html
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' D:\phpStudy\WWW\minidingcanapi\App\Common\Conf\debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000104s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001214s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001343s ]
+SQL: SHOW COLUMNS FROM `lr_program` [ RunTime:0.0046s ]
+SQL: SELECT * FROM `lr_program` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000117s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000231s ]
+
+[ 2017-09-05T08:38:00+08:00 ] 127.0.0.1 /minidingcanapi/index.php/Ht/More/setup.html
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' D:\phpStudy\WWW\minidingcanapi\App\Common\Conf\debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000092s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000873s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000964s ]
+SQL: SHOW COLUMNS FROM `lr_program` [ RunTime:0.0043s ]
+SQL: SELECT * FROM `lr_program` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000088s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000183s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010809s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010917s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001121s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001204s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001299s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001376s ]
+
+[ 2017-09-05T08:38:13+08:00 ] 127.0.0.1 /minidingcanapi/index.php/Ht/More/setup.html
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' D:\phpStudy\WWW\minidingcanapi\App\Common\Conf\debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000095s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001140s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001263s ]
+SQL: SHOW COLUMNS FROM `lr_program` [ RunTime:0.0059s ]
+SQL: SELECT * FROM `lr_program` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000087s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000187s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010073s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010187s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001299s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001391s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001772s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001903s ]
+
+[ 2017-09-05T08:39:26+08:00 ] 127.0.0.1 /minidingcanapi/index.php/Ht/More/setup.html
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' D:\phpStudy\WWW\minidingcanapi\App\Common\Conf\debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000096s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000869s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000957s ]
+SQL: SHOW COLUMNS FROM `lr_program` [ RunTime:0.0044s ]
+SQL: SELECT * FROM `lr_program` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000086s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000176s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010697s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010797s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001098s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001177s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001296s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001372s ]
+
+[ 2017-09-05T08:39:35+08:00 ] 127.0.0.1 /minidingcanapi/index.php/Ht/More/setup.html
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' D:\phpStudy\WWW\minidingcanapi\App\Common\Conf\debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000093s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000867s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000960s ]
+SQL: SHOW COLUMNS FROM `lr_program` [ RunTime:0.0045s ]
+SQL: SELECT * FROM `lr_program` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000087s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000174s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010395s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010503s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001093s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001179s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001289s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001364s ]
+
+[ 2017-09-05T08:39:53+08:00 ] 127.0.0.1 /minidingcanapi/index.php/Ht/More/setup.html
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' D:\phpStudy\WWW\minidingcanapi\App\Common\Conf\debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000097s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001643s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001761s ]
+SQL: SHOW COLUMNS FROM `lr_program` [ RunTime:0.0052s ]
+NOTIC: [8] Undefined index: validate D:\phpStudy\WWW\minidingcanapi\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\phpStudy\WWW\minidingcanapi\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: SELECT `id` FROM `lr_program` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: UPDATE `lr_program` SET `title`='餐饮版',`tel`='',`copyright`='Copyright © 2017',`yunfei`='4.00',`ptime`='30',`classname`='菜式推荐',`uptime`='1504571993' WHERE ( id=1 ) [ RunTime:0.0370s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000074s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000178s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010487s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010589s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001048s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001124s ]
+
+[ 2017-09-05T08:39:54+08:00 ] 127.0.0.1 /minidingcanapi/index.php/Ht/More/setup.html
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' D:\phpStudy\WWW\minidingcanapi\App\Common\Conf\debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000116s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000993s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001201s ]
+SQL: SHOW COLUMNS FROM `lr_program` [ RunTime:0.0068s ]
+SQL: SELECT * FROM `lr_program` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0009s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000087s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000179s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011084s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011203s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001253s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003313s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001961s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002094s ]
+
+[ 2017-09-05T08:40:01+08:00 ] 127.0.0.1 /minidingcanapi/index.php/Ht/More/setup.html
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' D:\phpStudy\WWW\minidingcanapi\App\Common\Conf\debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000095s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000983s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001097s ]
+SQL: SHOW COLUMNS FROM `lr_program` [ RunTime:0.0054s ]
+NOTIC: [8] Undefined index: validate D:\phpStudy\WWW\minidingcanapi\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\phpStudy\WWW\minidingcanapi\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: SELECT `id` FROM `lr_program` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: UPDATE `lr_program` SET `title`='餐饮版',`tel`='22222222',`copyright`='Copyright © 2017',`yunfei`='4.00',`ptime`='30',`classname`='菜式推荐',`uptime`='1504572001' WHERE ( id=1 ) [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000077s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000189s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009644s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009759s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002527s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002621s ]
+
+[ 2017-09-05T08:40:02+08:00 ] 127.0.0.1 /minidingcanapi/index.php/Ht/More/setup.html
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' D:\phpStudy\WWW\minidingcanapi\App\Common\Conf\debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000242s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001017s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001147s ]
+SQL: SHOW COLUMNS FROM `lr_program` [ RunTime:0.0043s ]
+SQL: SELECT * FROM `lr_program` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000091s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000190s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013133s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013234s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001068s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001142s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001299s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001375s ]
+

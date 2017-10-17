@@ -1,0 +1,86 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>后台管理</title>
+<link href="__PUBLIC__/ht/css/main.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="__PUBLIC__/ht/js/jquery.js"></script>
+<script type="text/javascript" src="__PUBLIC__/ht/js/action.js"></script>
+</head>
+<body>
+
+<div class="aaa_pts_show_1">【 已审核通过 】</div>
+
+<div class="aaa_pts_show_2">
+    
+    <div>
+       <div class="aaa_pts_4"><a href="{:U('finishlog')}">已审核</a></div>
+       <div class="aaa_pts_4"><a href="{:U('index')}">待审核</a></div>
+    </div>
+    <div class="aaa_pts_3">
+      <div class="pro_4 bord_1">
+         <div class="pro_5">店铺名称：<input type="text" class="inp_1 inp_6" id="name" value="<?php echo $name;?>"></div>
+         <div class="pro_6"><input type="button" class="aaa_pts_web_3" value="搜 索" style="margin:0;" onclick="product_option(0);"></div>
+      </div>
+      <table class="pro_3">
+         <tr class="tr_1">
+           <td>ID</td>
+           <td>申请账号</td>
+           <td>LOGO</td>
+           <td>店铺名称</td>
+           <td>实名认证类型</td>
+           <td>联系人</td>
+           <td>电话</td>
+           <td>认证收费</td>
+           <td>审核通过时间</td>
+           <td>操作</td>
+         </tr>
+         <tbody id="news_option">
+          <volist name='list' id="b">
+         <tr>
+		      <td>{$b.id}</td>
+          <td>{$b.user}</td>
+          <td><img src="__DATA__/{$b.logo}" width="80px" height="80px"></td>
+          <td>{$b.shopname}</td>
+          <td><?php echo $b['rztype']=='geren'?'个人':'企业'?></td>
+          <td>{$b.linkman}</td>
+          <td>{$b.tel}</td>
+          <td><?php  echo $b['is_free']==1?"免费" : "收费:￥".$b['fee']?></td>
+          <td>{$b.submittime}</td>
+          <td>
+          <if condition="$b.is_makeshop eq 0">
+          <a onclick="makeshop({$b.id})" >一键生成店铺</a>
+          <else/>
+          <font style="color:green">已生成店铺</font>
+          </if>
+        | 
+		        <a href="{:U('logedit')}?id={$b.id}" >查看详情</a>
+		   </td>
+	    </tr>
+    </volist>
+         </tbody>
+         <tr>
+            <td colspan="10" class="td_2">
+                 {$page}  
+             </td>
+         </tr>
+      </table>      
+    </div>
+    
+</div>
+<script>
+function product_option(page){
+  var shopname = $('#name').val();
+  location="{:U('index')}?shopname="+shopname; 
+}
+
+function makeshop(id){
+   if(confirm("是否一键生成店铺？初始密码将自动设置为888888"))
+   {
+    location="{:U('makeshop')}?id="+id; 
+   }
+}
+
+</script>
+</body>
+</html>
