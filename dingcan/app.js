@@ -13,7 +13,7 @@ App({
     logs.unshift(Date.now())
     wx.setStorageSync('logs', logs);
     //login
-    //this.getUserInfo();
+    this.getUserInfo();
   },
   getUserInfo: function (cb) {
     var that = this
